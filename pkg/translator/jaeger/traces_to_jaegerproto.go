@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package jaeger // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+package jaeger // import "github.com/ydessouky/enms-OTel-collector/translator/jaeger"
 
 import (
 	"encoding/base64"
@@ -38,10 +38,10 @@ func ProtoFromTraces(td ptrace.Traces) ([]*model.Batch, error) {
 	batches := make([]*model.Batch, 0, resourceSpans.Len())
 	for i := 0; i < resourceSpans.Len(); i++ {
 		rs := resourceSpans.At(i)
+
 		batch := resourceSpansToJaegerProto(rs)
-		if batch != nil {
-			batches = append(batches, batch)
-		}
+
+		batches = append(batches, batch)
 	}
 
 	return batches, nil
@@ -86,6 +86,7 @@ func resourceSpansToJaegerProto(rs ptrace.ResourceSpans) *model.Batch {
 
 func resourceToJaegerProtoProcess(resource pcommon.Resource) *model.Process {
 	process := &model.Process{}
+
 	attrs := resource.Attributes()
 	if attrs.Len() == 0 {
 		process.ServiceName = tracetranslator.ResourceNoServiceName

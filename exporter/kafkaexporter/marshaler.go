@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
-	"github.com/Shopify/sarama"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/pdata/ptrace"
@@ -24,7 +24,7 @@ import (
 // TracesMarshaler marshals traces into Message array.
 type TracesMarshaler interface {
 	// Marshal serializes spans into sarama's ProducerMessages
-	Marshal(traces ptrace.Traces, topic string) ([]*sarama.ProducerMessage, error)
+	Marshal(traces ptrace.Traces, topic string) ([]*kafka.Message, error)
 
 	// Encoding returns encoding name
 	Encoding() string
@@ -32,8 +32,8 @@ type TracesMarshaler interface {
 
 // MetricsMarshaler marshals metrics into Message array
 type MetricsMarshaler interface {
-	// Marshal serializes metrics into sarama's ProducerMessages
-	Marshal(metrics pmetric.Metrics, topic string) ([]*sarama.ProducerMessage, error)
+	// Marshal serializes metrics into kafka's ProducerMessages
+	Marshal(metrics pmetric.Metrics, topic string) ([]*kafka.Message, error)
 
 	// Encoding returns encoding name
 	Encoding() string
@@ -42,7 +42,7 @@ type MetricsMarshaler interface {
 // LogsMarshaler marshals logs into Message array
 type LogsMarshaler interface {
 	// Marshal serializes logs into sarama's ProducerMessages
-	Marshal(logs plog.Logs, topic string) ([]*sarama.ProducerMessage, error)
+	Marshal(logs plog.Logs, topic string) ([]*kafka.Message, error)
 
 	// Encoding returns encoding name
 	Encoding() string

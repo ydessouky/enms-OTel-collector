@@ -12,14 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
 	"context"
 	"errors"
 	"fmt"
-
-	"github.com/Shopify/sarama"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"go.opentelemetry.io/collector/consumer/consumererror"
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/pdata/plog"
@@ -32,7 +31,7 @@ var errUnrecognizedEncoding = fmt.Errorf("unrecognized encoding")
 
 // kafkaTracesProducer uses sarama to produce trace messages to Kafka.
 type kafkaTracesProducer struct {
-	producer  sarama.SyncProducer
+	producer  *kafka.Producer
 	topic     string
 	marshaler TracesMarshaler
 	logger    *zap.Logger
@@ -52,26 +51,29 @@ func (e *kafkaTracesProducer) tracesPusher(_ context.Context, td ptrace.Traces) 
 	if err != nil {
 		return consumererror.NewPermanent(err)
 	}
-	err = e.producer.SendMessages(messages)
-	if err != nil {
-		var prodErr sarama.ProducerErrors
-		if errors.As(err, &prodErr) {
-			if len(prodErr) > 0 {
-				return kafkaErrors{len(prodErr), prodErr[0].Err.Error()}
+	for _, message := range messages {
+		err = e.producer.Produce(message, nil)
+		if err != nil {
+			var prodErr kafka.Error
+			if errors.As(err, &prodErr) {
+				if len(prodErr.String()) > 0 {
+					return kafkaErrors{len(prodErr.String()), prodErr.String()}
+				}
 			}
+			return err
 		}
-		return err
 	}
 	return nil
 }
 
 func (e *kafkaTracesProducer) Close(context.Context) error {
-	return e.producer.Close()
+	e.producer.Close()
+	return nil
 }
 
 // kafkaMetricsProducer uses sarama to produce metrics messages to kafka
 type kafkaMetricsProducer struct {
-	producer  sarama.SyncProducer
+	producer  *kafka.Producer
 	topic     string
 	marshaler MetricsMarshaler
 	logger    *zap.Logger
@@ -82,26 +84,30 @@ func (e *kafkaMetricsProducer) metricsDataPusher(_ context.Context, md pmetric.M
 	if err != nil {
 		return consumererror.NewPermanent(err)
 	}
-	err = e.producer.SendMessages(messages)
-	if err != nil {
-		var prodErr sarama.ProducerErrors
-		if errors.As(err, &prodErr) {
-			if len(prodErr) > 0 {
-				return kafkaErrors{len(prodErr), prodErr[0].Err.Error()}
+	for _, message := range messages {
+		err = e.producer.Produce(message, nil)
+		if err != nil {
+			var prodErr kafka.Error
+			if errors.As(err, &prodErr) {
+				if len(prodErr.String()) > 0 {
+					return kafkaErrors{len(prodErr.String()), prodErr.String()}
+				}
 			}
+			return err
 		}
-		return err
 	}
+
 	return nil
 }
 
 func (e *kafkaMetricsProducer) Close(context.Context) error {
-	return e.producer.Close()
+	e.producer.Close()
+	return nil
 }
 
 // kafkaLogsProducer uses sarama to produce logs messages to kafka
 type kafkaLogsProducer struct {
-	producer  sarama.SyncProducer
+	producer  *kafka.Producer
 	topic     string
 	marshaler LogsMarshaler
 	logger    *zap.Logger
@@ -112,56 +118,82 @@ func (e *kafkaLogsProducer) logsDataPusher(_ context.Context, ld plog.Logs) erro
 	if err != nil {
 		return consumererror.NewPermanent(err)
 	}
-	err = e.producer.SendMessages(messages)
-	if err != nil {
-		var prodErr sarama.ProducerErrors
-		if errors.As(err, &prodErr) {
-			if len(prodErr) > 0 {
-				return kafkaErrors{len(prodErr), prodErr[0].Err.Error()}
+	for _, message := range messages {
+		err = e.producer.Produce(message, nil)
+		if err != nil {
+			var prodErr kafka.Error
+			if errors.As(err, &prodErr) {
+				if len(prodErr.String()) > 0 {
+					return kafkaErrors{len(prodErr.String()), prodErr.String()}
+				}
 			}
+			return err
 		}
-		return err
 	}
 	return nil
 }
 
 func (e *kafkaLogsProducer) Close(context.Context) error {
-	return e.producer.Close()
+	e.producer.Close()
+	return nil
 }
 
-func newSaramaProducer(config Config) (sarama.SyncProducer, error) {
-	c := sarama.NewConfig()
-	// These setting are required by the sarama.SyncProducer implementation.
-	c.Producer.Return.Successes = true
-	c.Producer.Return.Errors = true
-	c.Producer.RequiredAcks = config.Producer.RequiredAcks
-	// Because sarama does not accept a Context for every message, set the Timeout here.
-	c.Producer.Timeout = config.Timeout
-	c.Metadata.Full = config.Metadata.Full
-	c.Metadata.Retry.Max = config.Metadata.Retry.Max
-	c.Metadata.Retry.Backoff = config.Metadata.Retry.Backoff
-	c.Producer.MaxMessageBytes = config.Producer.MaxMessageBytes
-	c.Producer.Flush.MaxMessages = config.Producer.FlushMaxMessages
-
-	if config.ProtocolVersion != "" {
-		version, err := sarama.ParseKafkaVersion(config.ProtocolVersion)
-		if err != nil {
-			return nil, err
-		}
-		c.Version = version
-	}
-
-	if err := ConfigureAuthentication(config.Authentication, c); err != nil {
-		return nil, err
-	}
-
-	compression, err := saramaProducerCompressionCodec(config.Producer.Compression)
+func newConfluentKafkaProducer(config Config) (*kafka.Producer, error) {
+	compression, err := kafkaProducerCompressionCodec(config.Producer.Compression)
 	if err != nil {
 		return nil, err
 	}
-	c.Producer.Compression = compression
+	//c.Producer.Compression = compression
+	c := &kafka.ConfigMap{
+		"bootstrap.servers":                     config.Brokers,
+		"compression.type":                      compression,
+		"max.message.bytes":                     config.Producer.MaxMessageBytes,
+		"queue.buffering.max.messages":          config.Producer.FlushMaxMessages,
+		"acks":                                  config.Producer.RequiredAcks,
+		"max.in.flight.requests.per.connection": config.Metadata.Retry.Max,
+		"request.timeout.ms":                    config.Timeout,
+		"message.max.bytes":                     config.Producer.MaxMessageBytes,
+	}
+	// These setting are required by the sarama.SyncProducer implementation (removed)
 
-	producer, err := sarama.NewSyncProducer(config.Brokers, c)
+	// ------- List of unhandled configs ---------
+
+	//c.Producer.Return.Successes = true - not handled yet
+	//c.Producer.Return.Errors = true - not handled yet
+
+	// change this to be usable for confluent kafka
+
+	// ------- List of handled configs ---------
+
+	//The Go client for Confluent Kafka does not provide a way to specify the amount of time to wait before
+	//retrying a metadata request after a failure.
+	//Instead it automatically retries metadata requests upon failure with an exponential backoff mechanism.
+	//c.Metadata.Retry.Backoff = config.Metadata.Retry.Backoff
+
+	//c.Producer.RequiredAcks = config.Producer.RequiredAcks
+	//c.Producer.Flush.MaxMessages = config.Producer.FlushMaxMessages
+	//c.Metadata.Retry.Max = config.Metadata.Retry.Max
+	//c.Producer.Timeout = config.Timeout
+	//c.Metadata.Full = config.Metadata.Full
+	//c.Producer.MaxMessageBytes = config.Producer.MaxMessageBytes
+
+	// Because sarama does not accept a Context for every message, set the Timeout here.
+
+	//c.Producer.MaxMessageBytes = config.Producer.MaxMessageBytes
+
+	//if config.ProtocolVersion != "" {
+	//	version, err := sarama.ParseKafkaVersion(config.ProtocolVersion)
+	//	if err != nil {
+	//		return nil, err
+	//	}
+	//	c.Version = version
+	//}
+
+	//if err := ConfigureAuthentication(config.Authentication, c); err != nil {
+	//	return nil, err
+	//}
+
+	producer, err := kafka.NewProducer(c)
 	if err != nil {
 		return nil, err
 	}
@@ -173,7 +205,7 @@ func newMetricsExporter(config Config, set exporter.CreateSettings, marshalers m
 	if marshaler == nil {
 		return nil, errUnrecognizedEncoding
 	}
-	producer, err := newSaramaProducer(config)
+	producer, err := newConfluentKafkaProducer(config)
 	if err != nil {
 		return nil, err
 	}
@@ -193,7 +225,7 @@ func newTracesExporter(config Config, set exporter.CreateSettings, marshalers ma
 	if marshaler == nil {
 		return nil, errUnrecognizedEncoding
 	}
-	producer, err := newSaramaProducer(config)
+	producer, err := newConfluentKafkaProducer(config)
 	if err != nil {
 		return nil, err
 	}
@@ -210,7 +242,7 @@ func newLogsExporter(config Config, set exporter.CreateSettings, marshalers map[
 	if marshaler == nil {
 		return nil, errUnrecognizedEncoding
 	}
-	producer, err := newSaramaProducer(config)
+	producer, err := newConfluentKafkaProducer(config)
 	if err != nil {
 		return nil, err
 	}

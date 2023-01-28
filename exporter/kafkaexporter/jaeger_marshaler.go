@@ -12,18 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
 	"bytes"
+	"fmt"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
+	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
+	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde/avro"
+	"os"
 
-	"github.com/Shopify/sarama"
 	"github.com/gogo/protobuf/jsonpb"
 	jaegerproto "github.com/jaegertracing/jaeger/model"
+	"github.com/ydessouky/enms-OTel-collector/translator/jaeger"
 	"go.opentelemetry.io/collector/pdata/ptrace"
-	"go.uber.org/multierr"
-
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
 )
 
 type jaegerMarshaler struct {
@@ -32,32 +35,47 @@ type jaegerMarshaler struct {
 
 var _ TracesMarshaler = (*jaegerMarshaler)(nil)
 
-func (j jaegerMarshaler) Marshal(traces ptrace.Traces, topic string) ([]*sarama.ProducerMessage, error) {
-	batches, err := jaeger.ProtoFromTraces(traces)
+func (j jaegerMarshaler) Marshal(traces ptrace.Traces, topic string) ([]*kafka.Message, error) {
+
+	value, err := jaeger.ProtoFromTracesPopulation(traces)
 	if err != nil {
 		return nil, err
 	}
-	var messages []*sarama.ProducerMessage
+	var messages []*kafka.Message
+	client, err := schemaregistry.NewClient(schemaregistry.NewConfig("http://192.168.45.34:8088"))
 
-	var errs error
-	for _, batch := range batches {
-		for _, span := range batch.Spans {
-			span.Process = batch.Process
-			bts, err := j.marshaler.marshal(span)
-			// continue to process spans that can be serialized
-			if err != nil {
-				errs = multierr.Append(errs, err)
-				continue
-			}
-			key := []byte(span.TraceID.String())
-			messages = append(messages, &sarama.ProducerMessage{
-				Topic: topic,
-				Value: sarama.ByteEncoder(bts),
-				Key:   sarama.ByteEncoder(key),
-			})
-		}
+	ser, err := avro.NewSpecificSerializer(client, serde.ValueSerde, avro.NewSerializerConfig())
+
+	payload, err := ser.Serialize(topic, &value)
+	if err != nil {
+		fmt.Printf("Failed to serialize payload: %s\n", err)
+		os.Exit(1)
 	}
-	return messages, errs
+
+	//var errs error
+	//for _, batch := range batches {
+	//	for _, span := range batch.Spans {
+	//		span.Process = batch.Process
+	//		bts, err := j.marshaler.marshal(span)
+	//		// continue to process spans that can be serialized
+	//		if err != nil {
+	//			errs = multierr.Append(errs, err)
+	//			continue
+	//		}
+	//		key := []byte(span.TraceID.String())
+	//		messages = append(messages, &kafka.Message{
+	//			TopicPartition: kafka.TopicPartition{Topic: &topic, Partition: kafka.PartitionAny},
+	//			Value:          bts,
+	//			Key:            key,
+	//		})
+	//	}
+	messages = append(messages,
+		&kafka.Message{
+			TopicPartition: kafka.TopicPartition{Topic: &topic, Partition: kafka.PartitionAny},
+			Value:          payload,
+			Headers:        []kafka.Header{{Key: "myTestHeader", Value: []byte("header values are binary")}},
+		})
+	return messages, nil
 }
 
 func (j jaegerMarshaler) Encoding() string {

@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
 	"encoding/json"
 	"errors"
+	"github.com/confluentinc/confluent-kafka-go/kafka"
 
-	"github.com/Shopify/sarama"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 )
@@ -32,8 +32,8 @@ func newRawMarshaler() rawMarshaler {
 	return rawMarshaler{}
 }
 
-func (r rawMarshaler) Marshal(logs plog.Logs, topic string) ([]*sarama.ProducerMessage, error) {
-	var messages []*sarama.ProducerMessage
+func (r rawMarshaler) Marshal(logs plog.Logs, topic string) ([]*kafka.Message, error) {
+	var messages []*kafka.Message
 	for i := 0; i < logs.ResourceLogs().Len(); i++ {
 		rl := logs.ResourceLogs().At(i)
 		for j := 0; j < rl.ScopeLogs().Len(); j++ {
@@ -48,9 +48,12 @@ func (r rawMarshaler) Marshal(logs plog.Logs, topic string) ([]*sarama.ProducerM
 					continue
 				}
 
-				messages = append(messages, &sarama.ProducerMessage{
-					Topic: topic,
-					Value: sarama.ByteEncoder(b),
+				messages = append(messages, &kafka.Message{
+					TopicPartition: kafka.TopicPartition{
+						Topic:     &topic,
+						Partition: kafka.PartitionAny,
+					},
+					Value: b,
 				})
 			}
 		}

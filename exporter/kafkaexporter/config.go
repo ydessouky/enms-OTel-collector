@@ -12,13 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
 	"fmt"
 	"time"
 
-	"github.com/Shopify/sarama"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 )
@@ -47,7 +46,7 @@ type Config struct {
 	Producer Producer `mapstructure:"producer"`
 
 	// Authentication defines used authentication mechanism.
-	Authentication Authentication `mapstructure:"auth"`
+	//Authentication Authentication `mapstructure:"auth"`
 }
 
 // Metadata defines configuration for retrieving metadata from the broker.
@@ -75,7 +74,7 @@ type Producer struct {
 	//   0 -> NoResponse.  doesn't send any response
 	//   1 -> WaitForLocal. waits for only the local commit to succeed before responding ( default )
 	//   -1 -> WaitForAll. waits for all in-sync replicas to commit before responding.
-	RequiredAcks sarama.RequiredAcks `mapstructure:"required_acks"`
+	RequiredAcks int `mapstructure:"required_acks"`
 
 	// Compression Codec used to produce messages
 	// https://pkg.go.dev/github.com/Shopify/sarama@v1.30.0#CompressionCodec
@@ -106,7 +105,7 @@ func (cfg *Config) Validate() error {
 		return fmt.Errorf("producer.required_acks has to be between -1 and 1. configured value %v", cfg.Producer.RequiredAcks)
 	}
 
-	_, err := saramaProducerCompressionCodec(cfg.Producer.Compression)
+	_, err := kafkaProducerCompressionCodec(cfg.Producer.Compression)
 	if err != nil {
 		return err
 	}
@@ -114,19 +113,19 @@ func (cfg *Config) Validate() error {
 	return nil
 }
 
-func saramaProducerCompressionCodec(compression string) (sarama.CompressionCodec, error) {
+func kafkaProducerCompressionCodec(compression string) (string, error) {
 	switch compression {
 	case "none":
-		return sarama.CompressionNone, nil
+		return compression, nil
 	case "gzip":
-		return sarama.CompressionGZIP, nil
+		return compression, nil
 	case "snappy":
-		return sarama.CompressionSnappy, nil
+		return compression, nil
 	case "lz4":
-		return sarama.CompressionLZ4, nil
+		return compression, nil
 	case "zstd":
-		return sarama.CompressionZSTD, nil
+		return compression, nil
 	default:
-		return sarama.CompressionNone, fmt.Errorf("producer.compression should be one of 'none', 'gzip', 'snappy', 'lz4', or 'zstd'. configured value %v", compression)
+		return "none", fmt.Errorf("Producer.compression should be one of 'none', 'gzip', 'snappy', 'lz4', or 'zstd'. configured value %v", compression)
 	}
 }

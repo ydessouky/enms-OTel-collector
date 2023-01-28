@@ -12,13 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 
 import (
 	"context"
 	"time"
 
-	"github.com/Shopify/sarama"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/exporter"
@@ -43,7 +42,8 @@ const (
 	// default max.message.bytes for the producer
 	defaultProducerMaxMessageBytes = 1000000
 	// default required_acks for the producer
-	defaultProducerRequiredAcks = sarama.WaitForLocal
+	// change this to be usable for confluent kafka
+	defaultProducerRequiredAcks = 1
 	// default from sarama.NewConfig()
 	defaultCompression = "none"
 	// default from sarama.NewConfig()
