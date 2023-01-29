@@ -24,7 +24,7 @@ import (
 	"go.uber.org/multierr"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/key"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 func partitionByTraceID(v interface{}) string {

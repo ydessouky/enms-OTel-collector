@@ -156,7 +156,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx v0.68.0 // indirect
@@ -291,7 +291,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipki
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/testbed/mockdatareceivers/mockawsxrayreceiver => ../testbed/mockdatareceivers/mockawsxrayreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../internal/coreinternal
 

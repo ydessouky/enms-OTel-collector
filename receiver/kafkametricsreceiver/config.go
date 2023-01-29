@@ -17,7 +17,7 @@ package kafkametricsreceiver // import "github.com/open-telemetry/opentelemetry-
 import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkametricsreceiver/internal/metadata"
 )
 

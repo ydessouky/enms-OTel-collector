@@ -40,7 +40,7 @@ import (
 	"google.golang.org/grpc"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 var jaegerAgent = component.NewIDWithName(typeStr, "agent_test")

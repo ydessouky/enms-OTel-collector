@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 type jaegerMarshaler struct {

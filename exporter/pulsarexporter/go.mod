@@ -7,7 +7,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -85,6 +85,6 @@ require (
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 retract v0.65.0

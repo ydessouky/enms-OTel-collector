@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger
+module github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger
 
 go 1.18
 

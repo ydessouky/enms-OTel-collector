@@ -314,7 +314,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter v0.68.0 // indirect
@@ -373,7 +373,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
@@ -857,7 +857,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filte
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver => ../../receiver/windowsperfcountersreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter => ../../exporter/elasticsearchexporter
 
@@ -899,7 +899,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/corei
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension => ../../extension/oidcauthextension
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/influxdbexporter => ../../exporter/influxdbexporter
 

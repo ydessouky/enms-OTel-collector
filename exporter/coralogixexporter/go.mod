@@ -57,6 +57,6 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/corei
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 retract v0.65.0

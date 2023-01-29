@@ -163,7 +163,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx v0.68.0 // indirect
@@ -520,7 +520,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynat
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/clickhouseexporter => ../../exporter/clickhouseexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/signalfxreceiver => ../../receiver/signalfxreceiver
 
@@ -590,7 +590,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sob
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/pulsarexporter => ../../exporter/pulsarexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver => ../../receiver/zipkinreceiver
 

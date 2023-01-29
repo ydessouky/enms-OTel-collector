@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package jaeger // import "github.com/ydessouky/enms-OTel-collector/translator/jaeger"
-
+package jaeger // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
+/*
 import (
 	"encoding/base64"
 	"fmt"
@@ -195,3 +195,4 @@ func jThriftRefTypeToAttribute(ref jaeger.SpanRefType) string {
 	}
 	return conventions.AttributeOpentracingRefTypeFollowsFrom
 }
+*/

@@ -37,7 +37,7 @@ import (
 	"google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 const (

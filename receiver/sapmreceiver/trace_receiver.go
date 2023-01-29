@@ -33,7 +33,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 var gzipWriterPool = &sync.Pool{

@@ -1,11 +1,27 @@
 package jaeger
 
 import (
+	"encoding/hex"
 	"fmt"
-	traceutil "github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 )
+
+func SpanIDToHexOrEmptyString(id pcommon.SpanID) string {
+	if id.IsEmpty() {
+		return ""
+	}
+	return hex.EncodeToString(id[:])
+}
+
+// TraceIDToHexOrEmptyString returns a hex string from TraceID.
+// An empty string is returned, if TraceID is empty.
+func TraceIDToHexOrEmptyString(id pcommon.TraceID) string {
+	if id.IsEmpty() {
+		return ""
+	}
+	return hex.EncodeToString(id[:])
+}
 
 func ProtoFromTracesPopulation(td ptrace.Traces) (*StreamDataRecordMessage, error) {
 	resourceSpans := td.ResourceSpans()
@@ -91,8 +107,8 @@ func spanToJaegerProtoTest(span ptrace.Span, libraryTags pcommon.Instrumentation
 }
 
 func traceIDToJaegerProtoTest(id pcommon.TraceID) string {
-	return traceutil.TraceIDToHexOrEmptyString(id)
+	return TraceIDToHexOrEmptyString(id)
 }
 func spanIDToJaegerProtoTest(id pcommon.SpanID) string {
-	return traceutil.SpanIDToHexOrEmptyString(id)
+	return SpanIDToHexOrEmptyString(id)
 }

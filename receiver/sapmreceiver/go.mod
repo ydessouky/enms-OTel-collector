@@ -7,7 +7,7 @@ require (
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0
 	github.com/signalfx/sapm-proto v0.12.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
@@ -62,7 +62,7 @@ require (
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
 

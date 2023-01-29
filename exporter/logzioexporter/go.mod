@@ -6,7 +6,7 @@ require (
 	github.com/hashicorp/go-hclog v1.4.0
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -60,7 +60,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 

@@ -35,7 +35,7 @@ import (
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 // newTracesExporter returns a new Jaeger gRPC exporter.

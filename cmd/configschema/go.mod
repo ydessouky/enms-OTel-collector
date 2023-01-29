@@ -271,7 +271,7 @@ require (
 	github.com/leoluk/perflib_exporter v0.2.0 // indirect
 	github.com/lib/pq v1.10.7 // indirect
 	github.com/lightstep/go-expohisto v1.0.0 // indirect
-	github.com/linkedin/goavro/v2 v2.9.8 // indirect
+	github.com/linkedin/goavro/v2 v2.11.1 // indirect
 	github.com/linode/linodego v1.9.3 // indirect
 	github.com/lufia/plan9stats v0.0.0-20220517141722-cf486979b281 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
@@ -325,7 +325,6 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter v0.68.0 // indirect
@@ -384,7 +383,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
@@ -561,6 +560,7 @@ require (
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
+	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter v0.68.0 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
 	github.com/yuin/gopher-lua v0.0.0-20220504180219-658193537a64 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
@@ -715,7 +715,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaege
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter => ../../exporter/jaegerthrifthttpexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter => ../../exporter/loadbalancingexporter
 
@@ -801,7 +801,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza => 
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl => ../../pkg/ottl
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki => ../../pkg/translator/loki
 

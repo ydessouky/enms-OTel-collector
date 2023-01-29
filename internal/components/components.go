@@ -52,7 +52,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter"

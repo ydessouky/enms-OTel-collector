@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package jaeger // import "github.com/ydessouky/enms-OTel-collector/translator/jaeger"
-
+package jaeger // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
+/*
 import (
 	"encoding/base64"
 
@@ -430,3 +430,4 @@ func strToJRefType(attr string) model.SpanRefType {
 	// that's not a model.ChildOf is a model.FollowsFrom
 	return model.FollowsFrom
 }
+*/

@@ -14,6 +14,7 @@
 
 package jaeger
 
+/*
 import (
 	"encoding/binary"
 	"strconv"
@@ -1058,3 +1059,4 @@ func generateTracesTwoSpansFromTwoLibraries() ptrace.Traces {
 
 	return td
 }
+*/

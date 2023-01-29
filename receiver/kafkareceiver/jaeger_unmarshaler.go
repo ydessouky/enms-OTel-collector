@@ -21,7 +21,7 @@ import (
 	jaegerproto "github.com/jaegertracing/jaeger/model"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 type jaegerProtoSpanUnmarshaler struct {

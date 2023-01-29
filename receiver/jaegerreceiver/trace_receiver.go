@@ -48,7 +48,7 @@ import (
 	"go.uber.org/multierr"
 	"google.golang.org/grpc"
 
-	jaegertranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	jaegertranslator "github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 // configuration defines the behavior and the ports that

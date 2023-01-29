@@ -31,7 +31,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	jaegertranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	jaegertranslator "github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 func newTracesExporter(config *Config, params exporter.CreateSettings) (exporter.Traces, error) {

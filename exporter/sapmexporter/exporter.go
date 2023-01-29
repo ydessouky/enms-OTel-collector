@@ -31,7 +31,7 @@ import (
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 
 // TODO: Find a place for this to be shared.

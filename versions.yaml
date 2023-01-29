@@ -46,7 +46,7 @@ module-sets:
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerthrifthttpexporter
-      - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter
+      - github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logicmonitorexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter
@@ -112,7 +112,7 @@ module-sets:
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl
-      - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger
+      - github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus
       - github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus
