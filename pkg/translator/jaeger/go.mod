@@ -3,6 +3,7 @@ module github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger
 go 1.18
 
 require (
+	github.com/actgardner/gogen-avro/v10 v10.2.1
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
 	github.com/stretchr/testify v1.8.1
