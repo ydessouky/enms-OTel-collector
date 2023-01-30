@@ -3,6 +3,8 @@ module github.com/ydessouky/enms-OTel-collector
 go 1.18
 
 require (
+	github.com/prometheus/prometheus v0.40.7
+	github.com/stretchr/testify v1.8.1
 	github.com/ydessouky/enms-OTel-collector/exporter/alibabacloudlogserviceexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/awscloudwatchlogsexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/awsemfexporter v0.68.0
@@ -26,6 +28,7 @@ require (
 	github.com/ydessouky/enms-OTel-collector/exporter/instanaexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/jaegerthrifthttpexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/loadbalancingexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/logzioexporter v0.68.0
 	github.com/ydessouky/enms-OTel-collector/exporter/lokiexporter v0.68.0
@@ -158,9 +161,6 @@ require (
 	github.com/ydessouky/enms-OTel-collector/receiver/windowsperfcountersreceiver v0.68.0
 	github.com/ydessouky/enms-OTel-collector/receiver/zipkinreceiver v0.68.0
 	github.com/ydessouky/enms-OTel-collector/receiver/zookeeperreceiver v0.68.0
-	github.com/prometheus/prometheus v0.40.7
-	github.com/stretchr/testify v1.8.1
-	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter v0.68.0
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
 	go.opentelemetry.io/collector/consumer v0.68.0
@@ -465,34 +465,6 @@ require (
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
 	github.com/nginxinc/nginx-prometheus-exporter v0.8.1-0.20201110005315-f5a5f8086c19 // indirect
 	github.com/observiq/ctimefmt v1.0.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/extension/observer v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/awsutil v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/cwlogs v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/k8s v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/metrics v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/proxy v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/aws/xray v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/docker v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/filter v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/k8sconfig v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/kubelet v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/metadataproviders v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/internal/splunk v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/batchpersignal v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/ottl v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/loki v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheusremotewrite v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin v0.68.0 // indirect
-	github.com/ydessouky/enms-OTel-collector/pkg/winperfcounters v0.68.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.3-0.20211202183452-c5a74bcca799 // indirect
 	github.com/opencontainers/runc v1.1.4 // indirect
@@ -567,7 +539,35 @@ require (
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
+	github.com/ydessouky/enms-OTel-collector/extension/observer v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/awsutil v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/cwlogs v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/k8s v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/metrics v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/proxy v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/aws/xray v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/docker v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/filter v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/k8sconfig v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/kubelet v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/metadataproviders v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/splunk v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/batchpersignal v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/ottl v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/loki v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheusremotewrite v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/winperfcounters v0.68.0 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
 	github.com/yuin/gopher-lua v0.0.0-20220504180219-658193537a64 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
