@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureeventhubreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/azureeventhubreceiver
 
 go 1.18
 
@@ -7,7 +7,7 @@ require (
 	github.com/Azure/azure-event-hubs-go/v3 v3.4.0
 	github.com/go-test/deep v1.1.0
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/stanza v0.68.0
 	github.com/relvacode/iso8601 v1.1.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
@@ -93,8 +93,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage => ../../extension/storage
+replace github.com/ydessouky/enms-OTel-collector/extension/storage => ../../extension/storage
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza => ../../pkg/stanza
+replace github.com/ydessouky/enms-OTel-collector/pkg/stanza => ../../pkg/stanza
 
 retract v0.65.0

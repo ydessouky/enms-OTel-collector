@@ -22,7 +22,7 @@ import (
 	"github.com/stretchr/testify/require"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	metadata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
+	metadata "github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata"
 )
 
 func Test_getGenericMetadata(t *testing.T) {

@@ -1,13 +1,13 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor
 
 go 1.18
 
 require (
 	github.com/hashicorp/golang-lru v0.5.4
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/prometheusexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/jaegerreceiver v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -58,9 +58,9 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mostynb/go-grpc-compression v1.1.17 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus v0.68.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/ovh/go-ovh v1.3.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -114,28 +114,28 @@ replace cloud.google.com/go => cloud.google.com/go v0.100.2
 // Force cloud.google.com/go/compute to be at least v1.12.1.
 replace cloud.google.com/go/compute => cloud.google.com/go/compute v1.12.1
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter => ../../exporter/jaegerexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter => ../../exporter/jaegerexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter => ../../exporter/prometheusexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/prometheusexporter => ../../exporter/prometheusexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../../exporter/prometheusremotewriteexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/prometheusremotewriteexporter => ../../exporter/prometheusremotewriteexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../../pkg/resourcetotelemetry
+replace github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry => ../../pkg/resourcetotelemetry
 
 replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../pkg/translator/opencensus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus => ../../pkg/translator/opencensus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../pkg/translator/prometheus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus => ../../pkg/translator/prometheus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../../pkg/translator/prometheusremotewrite
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheusremotewrite => ../../pkg/translator/prometheusremotewrite
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver => ../../receiver/jaegerreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/jaegerreceiver => ../../receiver/jaegerreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../../receiver/prometheusreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver => ../../receiver/prometheusreceiver
 
 retract v0.65.0

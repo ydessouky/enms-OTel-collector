@@ -21,7 +21,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottltest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/ottltest"
 )
 
 func hello[K any]() (ExprFunc[K], error) {

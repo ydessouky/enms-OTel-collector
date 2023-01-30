@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package file // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/file"
+package file // import "github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/input/file"
 
 import (
 	"context"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/fileconsumer"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/helper"
 )
 
 type toBodyFunc func([]byte) interface{}

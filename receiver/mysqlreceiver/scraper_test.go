@@ -31,8 +31,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
 )
 
 func TestScrape(t *testing.T) {

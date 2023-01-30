@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
+	ci "github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight"
 )
 
 type mockCIMetric struct {

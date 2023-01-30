@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/proxy"
 )
 
 func TestInvalidEndpoint(t *testing.T) {

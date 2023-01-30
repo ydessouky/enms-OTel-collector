@@ -45,7 +45,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
 )
 
 var requestTimeRegex = regexp.MustCompile(`time":(\d+)`)

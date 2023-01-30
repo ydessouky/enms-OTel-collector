@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package loadbalancingexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
+package loadbalancingexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/loadbalancingexporter"
 
 import (
 	"context"
@@ -31,7 +31,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal"
+	"github.com/ydessouky/enms-OTel-collector/pkg/batchpersignal"
 )
 
 var _ exporter.Logs = (*logExporterImp)(nil)

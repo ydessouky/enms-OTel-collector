@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package diskscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/diskscraper"
+package diskscraper // import "github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/scraper/diskscraper"
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/diskscraper/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/scraper/diskscraper/internal/metadata"
 )
 
 // Config relating to Disk Metric Scraper.

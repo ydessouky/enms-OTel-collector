@@ -28,9 +28,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/helper"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/testutil"
 )
 
 func testEmitFunc(emitChan chan *emitParams) EmitFunc {

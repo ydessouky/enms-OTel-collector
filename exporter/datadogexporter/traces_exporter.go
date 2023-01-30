@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package datadogexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
+package datadogexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter"
 
 import (
 	"context"
@@ -33,10 +33,10 @@ import (
 	"go.uber.org/zap"
 	zorkian "gopkg.in/zorkian/go-datadog-api.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/scrub"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/clientutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metrics"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/scrub"
 )
 
 type traceExporter struct {

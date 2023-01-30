@@ -20,10 +20,10 @@ import (
 
 	"go.opentelemetry.io/collector/config/configtls"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/tcp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/udp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/operatortest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/helper"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/input/tcp"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/input/udp"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/operatortest"
 )
 
 func TestUnmarshal(t *testing.T) {

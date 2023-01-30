@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package syslog // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/syslog"
+package syslog // import "github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/parser/syslog"
 
 import (
 	"strings"
 	"time"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
 )
 
 type Case struct {

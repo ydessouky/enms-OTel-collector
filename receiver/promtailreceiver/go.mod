@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/promtailreceiver
 
 go 1.18
 
 require (
 	github.com/go-kit/log v0.2.1
 	github.com/grafana/loki v1.6.2-0.20221214135803-c71620ae9437
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/stanza v0.68.0
 	github.com/prometheus/client_golang v1.14.0
 	github.com/prometheus/common v0.39.0
 	github.com/prometheus/prometheus v0.40.7
@@ -244,6 +244,6 @@ replace github.com/cloudflare/cloudflare-go => github.com/cyriltovena/cloudflare
 // fork containing a line-buffered logger which should improve logging performance for loki
 replace github.com/go-kit/log => github.com/dannykopping/go-kit-log v0.2.2-0.20221002180827-5591c1641b6b
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza => ../../pkg/stanza
+replace github.com/ydessouky/enms-OTel-collector/pkg/stanza => ../../pkg/stanza
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage => ../../extension/storage
+replace github.com/ydessouky/enms-OTel-collector/extension/storage => ../../extension/storage

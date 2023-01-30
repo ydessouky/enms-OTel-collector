@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver/protocol"
 )
 
 func TestLoadConfig(t *testing.T) {

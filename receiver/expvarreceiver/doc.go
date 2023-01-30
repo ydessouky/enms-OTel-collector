@@ -12,6 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package expvarreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/expvarreceiver"
+package expvarreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/expvarreceiver"
 
 //go:generate mdatagen metadata.yaml

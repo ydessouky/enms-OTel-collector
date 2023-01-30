@@ -20,7 +20,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudspannerreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/googlecloudspannerreceiver/internal/metadata"
 )
 
 func TestMetadata_ToLabelValuesMetadata(t *testing.T) {

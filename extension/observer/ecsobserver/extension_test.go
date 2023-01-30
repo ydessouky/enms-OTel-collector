@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/extension/extensiontest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver/internal/ecsmock"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer/ecsobserver/internal/ecsmock"
 )
 
 // inspectErrorHost implements component.Host.
@@ -79,7 +79,7 @@ func (h *inspectErrorHost) getError() error {
 func TestExtensionStartStop(t *testing.T) {
 	if runtime.GOOS == "windows" {
 		t.Skip("skipping flaky test on Windows, see " +
-			"https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/4042")
+			"https://github.com/ydessouky/enms-OTel-collector/issues/4042")
 	}
 	refreshInterval := 100 * time.Millisecond
 	waitDuration := 2 * refreshInterval

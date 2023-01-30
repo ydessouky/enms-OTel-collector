@@ -6,7 +6,7 @@
 | Supported pipeline types | traces    |
 | Distributions            | [contrib] |
 
-> note: The labels of service graph metrics emitted by this processor have a breaking change, the previous labels set will deprecate in the next release, refer [Edge loss attributes from client-side or server-side](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16002)
+> note: The labels of service graph metrics emitted by this processor have a breaking change, the previous labels set will deprecate in the next release, refer [Edge loss attributes from client-side or server-side](https://github.com/ydessouky/enms-OTel-collector/issues/16002)
 
 The service graphs processor is a traces processor that builds a map representing the interrelationships between various services in a system.
 The processor will analyse trace data and generate metrics describing the relationship between the services.
@@ -69,7 +69,7 @@ dimensions coming from spans with `SPAN_KIND_SERVER`.
 Since the service graph processor has to process both sides of an edge,
 it needs to process all spans of a trace to function properly.
 If spans of a trace are spread out over multiple instances, spans are not paired up reliably.
-A possible solution to this problem is using the [load balancing exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/loadbalancingexporter)
+A possible solution to this problem is using the [load balancing exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/loadbalancingexporter)
 in a layer on front of collector instances running this processor.
 
 ## Visualization

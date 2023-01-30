@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbatlasreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/mongodbatlasreceiver
 
 go 1.18
 
 require (
 	github.com/cenkalti/backoff/v4 v4.2.0
 	github.com/mongodb-forks/digest v1.0.4
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/stanza v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.mongodb.org/atlas v0.20.0
 	go.opentelemetry.io/collector v0.68.0
@@ -55,10 +55,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza => ../../pkg/stanza
+replace github.com/ydessouky/enms-OTel-collector/pkg/stanza => ../../pkg/stanza
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage => ../../extension/storage
+replace github.com/ydessouky/enms-OTel-collector/extension/storage => ../../extension/storage
 
 retract v0.65.0

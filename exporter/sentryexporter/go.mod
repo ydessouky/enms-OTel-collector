@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/sentryexporter
 
 go 1.18
 
 require (
 	github.com/getsentry/sentry-go v0.16.0
 	github.com/google/go-cmp v0.5.9
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -47,6 +47,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
 retract v0.65.0

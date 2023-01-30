@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator
+module github.com/ydessouky/enms-OTel-collector/receiver/receivercreator
 
 go 1.18
 
 require (
 	github.com/antonmedv/expr v1.9.0
 	github.com/census-instrumentation/opencensus-proto v0.4.1
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0
+	github.com/ydessouky/enms-OTel-collector/extension/observer v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus v0.68.0
 	github.com/spf13/cast v1.5.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
@@ -43,7 +43,7 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/prometheus/client_golang v1.14.0 // indirect
@@ -78,10 +78,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer => ../../extension/observer
+replace github.com/ydessouky/enms-OTel-collector/extension/observer => ../../extension/observer
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../pkg/translator/opencensus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus => ../../pkg/translator/opencensus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
 retract v0.65.0

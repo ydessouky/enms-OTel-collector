@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl"
 )
 
 func Test_concat(t *testing.T) {

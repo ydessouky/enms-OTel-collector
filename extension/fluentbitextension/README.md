@@ -6,7 +6,7 @@
 | Distributions            | [contrib]         |
 
 This extension has been deprecated due to security concerns around the ability to specify the execution of
-any arbitrary processes via its configuration. See [#6721](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/6721) for additional details.
+any arbitrary processes via its configuration. See [#6721](https://github.com/ydessouky/enms-OTel-collector/issues/6721) for additional details.
 
 **This extension is experimental and may receive breaking changes or be removed
 at any time.**

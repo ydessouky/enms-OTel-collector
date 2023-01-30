@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/elasticsearchreceiver
 
 go 1.18
 
 require (
 	github.com/google/go-cmp v0.5.9
 	github.com/hashicorp/go-version v1.6.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/comparetest v0.68.0
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
 	go.opentelemetry.io/collector v0.68.0
@@ -75,6 +75,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest => ../../internal/comparetest
+replace github.com/ydessouky/enms-OTel-collector/internal/comparetest => ../../internal/comparetest
 
 retract v0.65.0

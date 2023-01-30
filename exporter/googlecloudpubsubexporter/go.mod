@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlecloudpubsubexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/googlecloudpubsubexporter
 
 go 1.18
 

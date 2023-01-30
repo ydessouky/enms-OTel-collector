@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package httpcheckreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/httpcheckreceiver"
+package httpcheckreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/httpcheckreceiver"
 
 import (
 	"context"
@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
 )
 
 func newMockServer(t *testing.T, responseCode int) *httptest.Server {

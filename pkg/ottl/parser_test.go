@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottltest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/ottltest"
 )
 
 // This is not in ottltest because it depends on a type that's a member of OTTL.

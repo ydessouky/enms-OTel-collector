@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/correctnesstests"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/testbed/correctnesstests"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 var correctnessResults testbed.TestResultsSummary = &testbed.CorrectnessResults{}

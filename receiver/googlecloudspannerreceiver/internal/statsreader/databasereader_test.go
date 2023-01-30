@@ -25,8 +25,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudspannerreceiver/internal/datasource"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudspannerreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/googlecloudspannerreceiver/internal/datasource"
+	"github.com/ydessouky/enms-OTel-collector/receiver/googlecloudspannerreceiver/internal/metadata"
 )
 
 type mockReader struct {

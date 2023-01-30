@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package signalfxreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/signalfxreceiver"
+package signalfxreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/signalfxreceiver"
 
 import (
 	"compress/gzip"
@@ -37,8 +37,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx"
 )
 
 const (

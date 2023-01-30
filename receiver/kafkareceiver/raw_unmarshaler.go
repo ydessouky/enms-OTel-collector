@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkareceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver"
+package kafkareceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/kafkareceiver"
 
 import (
 	"go.opentelemetry.io/collector/pdata/plog"

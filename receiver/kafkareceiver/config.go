@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkareceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver"
+package kafkareceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/kafkareceiver"
 
 import (
 	"time"
@@ -60,8 +60,6 @@ type Config struct {
 	// Metadata is the namespace for metadata management properties used by the
 	// Client, and shared by the Producer/Consumer.
 	Metadata kafkaexporter.Metadata `mapstructure:"metadata"`
-
-	Authentication kafkaexporter.Authentication `mapstructure:"auth"`
 
 	// Controls the auto-commit functionality
 	AutoCommit AutoCommit `mapstructure:"autocommit"`

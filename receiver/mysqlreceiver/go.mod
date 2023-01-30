@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mysqlreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/mysqlreceiver
 
 go 1.18
 
 require (
 	github.com/go-sql-driver/mysql v1.7.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/comparetest v0.68.0
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
 	go.opentelemetry.io/collector v0.68.0
@@ -66,6 +66,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest => ../../internal/comparetest
+replace github.com/ydessouky/enms-OTel-collector/internal/comparetest => ../../internal/comparetest
 
 retract v0.65.0

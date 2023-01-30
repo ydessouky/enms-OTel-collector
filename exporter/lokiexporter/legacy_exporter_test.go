@@ -38,8 +38,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter/internal/tenant"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki/logproto"
+	"github.com/ydessouky/enms-OTel-collector/exporter/lokiexporter/internal/tenant"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/loki/logproto"
 )
 
 const (

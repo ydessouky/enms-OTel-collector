@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/redisreceiver/internal/metadata"
 )
 
 func TestDataPointRecorders(t *testing.T) {

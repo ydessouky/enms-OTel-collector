@@ -15,7 +15,7 @@
 //go:build integration
 // +build integration
 
-package flinkmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/flinkmetricsreceiver"
+package flinkmetricsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/flinkmetricsreceiver"
 
 import (
 	"context"
@@ -37,8 +37,8 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
 )
 
 func TestFlinkIntegration(t *testing.T) {

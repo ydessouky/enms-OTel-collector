@@ -23,8 +23,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottltest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/ottltest"
 )
 
 func Test_newPathGetSetter_NumberDataPoint(t *testing.T) {

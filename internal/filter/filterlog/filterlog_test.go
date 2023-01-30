@@ -23,9 +23,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottllog"
 )
 
 func createConfig(matchType filterset.MatchType) *filterset.Config {

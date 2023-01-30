@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package adapter // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
+package adapter // import "github.com/ydessouky/enms-OTel-collector/pkg/stanza/adapter"
 
 import (
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
 )
 
 // BaseConfig is the common configuration of a stanza-based receiver

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/skywalkingreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/skywalkingreceiver
 
 go 1.18
 

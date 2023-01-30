@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
 )
 
 func BenchmarkConvertFromPdataSimple(b *testing.B) {

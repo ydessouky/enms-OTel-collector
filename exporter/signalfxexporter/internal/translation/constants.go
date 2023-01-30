@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package translation // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
+package translation // import "github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/translation"
 
 const (
 	// DefaultTranslationRulesYaml defines default translation rules that will be applied to metrics if

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package mongodbatlasreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbatlasreceiver"
+package mongodbatlasreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/mongodbatlasreceiver"
 
 import (
 	"context"
@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbatlasreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbatlasreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/mongodbatlasreceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/receiver/mongodbatlasreceiver/internal/metadata"
 )
 
 type receiver struct {

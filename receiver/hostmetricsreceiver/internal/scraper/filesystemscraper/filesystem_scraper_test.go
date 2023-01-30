@@ -31,9 +31,9 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/filesystemscraper/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/scraper/filesystemscraper/internal/metadata"
 )
 
 func TestScrape(t *testing.T) {

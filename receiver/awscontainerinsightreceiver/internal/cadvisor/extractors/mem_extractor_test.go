@@ -17,8 +17,8 @@ package extractors
 import (
 	"testing"
 
-	. "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor/testutils"
+	. "github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/cadvisor/testutils"
 )
 
 func TestMemStats(t *testing.T) {

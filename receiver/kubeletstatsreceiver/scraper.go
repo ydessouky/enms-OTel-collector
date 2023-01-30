@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kubeletstatsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver"
+package kubeletstatsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/kubeletstatsreceiver"
 
 import (
 	"context"
@@ -27,8 +27,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/kubelet"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/kubeletstatsreceiver/internal/kubelet"
+	"github.com/ydessouky/enms-OTel-collector/receiver/kubeletstatsreceiver/internal/metadata"
 )
 
 type scraperOptions struct {

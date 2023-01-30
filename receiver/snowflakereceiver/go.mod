@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/snowflakereceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/snowflakereceiver
 
 go 1.19
 

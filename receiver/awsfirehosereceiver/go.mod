@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsfirehosereceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/awsfirehosereceiver
 
 go 1.18
 

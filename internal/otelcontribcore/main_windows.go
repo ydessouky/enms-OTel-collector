@@ -15,7 +15,7 @@
 //go:build windows
 // +build windows
 
-package otelcontribcore // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelcontribcore"
+package otelcontribcore // import "github.com/ydessouky/enms-OTel-collector/internal/otelcontribcore"
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/chronyreceiver
 
 go 1.18
 

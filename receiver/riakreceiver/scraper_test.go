@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package riakreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver"
+package riakreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver"
 
 import (
 	"context"
@@ -30,11 +30,11 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/mocks"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/model"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver/internal/mocks"
+	"github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver/internal/model"
 )
 
 func TestScraperStart(t *testing.T) {

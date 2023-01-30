@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/attraction"
 )
 
 func TestFactory_Type(t *testing.T) {

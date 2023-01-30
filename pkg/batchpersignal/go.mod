@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal
+module github.com/ydessouky/enms-OTel-collector/pkg/batchpersignal
 
 go 1.18
 

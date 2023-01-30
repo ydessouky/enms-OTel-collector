@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package receivercreator // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator"
+package receivercreator // import "github.com/ydessouky/enms-OTel-collector/receiver/receivercreator"
 
 import (
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
 )
 
 // receiverMap is a multimap for mapping one id to many receivers. It does

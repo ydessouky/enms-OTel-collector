@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package lokiexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/lokiexporter"
+package lokiexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/lokiexporter"
 
 import (
 	"context"
@@ -31,7 +31,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exportertest"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki/logproto"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/loki/logproto"
 )
 
 func TestPushLogData(t *testing.T) {

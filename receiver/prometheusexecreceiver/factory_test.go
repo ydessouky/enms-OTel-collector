@@ -29,8 +29,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusexecreceiver/subprocessmanager"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/prometheusexecreceiver/subprocessmanager"
+	"github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver"
 )
 
 func TestCreateTraceAndMetricsReceiver(t *testing.T) {

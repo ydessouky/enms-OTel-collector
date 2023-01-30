@@ -15,7 +15,7 @@
 //go:build !windows
 // +build !windows
 
-package pagingscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/pagingscraper"
+package pagingscraper // import "github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/scraper/pagingscraper"
 
 import (
 	"context"
@@ -30,7 +30,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/pagingscraper/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/scraper/pagingscraper/internal/metadata"
 )
 
 const (

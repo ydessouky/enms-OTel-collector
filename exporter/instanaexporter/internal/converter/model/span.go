@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package model // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/internal/converter/model"
+package model // import "github.com/ydessouky/enms-OTel-collector/exporter/instanaexporter/internal/converter/model"
 
 import (
 	"fmt"
@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
 )
 
 const (

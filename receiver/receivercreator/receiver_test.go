@@ -37,8 +37,8 @@ import (
 	"go.uber.org/zap"
 	zapObserver "go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	internaldata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
+	internaldata "github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

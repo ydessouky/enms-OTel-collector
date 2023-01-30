@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter
+module github.com/ydessouky/enms-OTel-collector/internal/filter
 
 go 1.18
 
 require (
 	github.com/antonmedv/expr v1.9.0
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/ottl v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector/confmap v0.68.0
 	go.opentelemetry.io/collector/pdata v1.0.0-rc2
@@ -48,8 +48,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl => ../../pkg/ottl
+replace github.com/ydessouky/enms-OTel-collector/pkg/ottl => ../../pkg/ottl
 
 retract v0.65.0

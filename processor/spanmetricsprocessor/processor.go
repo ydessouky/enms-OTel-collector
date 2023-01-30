@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package spanmetricsprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor"
+package spanmetricsprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor"
 
 import (
 	"bytes"
@@ -34,8 +34,8 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor/internal/cache"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor/internal/cache"
 )
 
 const (

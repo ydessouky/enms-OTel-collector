@@ -30,8 +30,8 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	metadata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/testutils"
+	metadata "github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/k8sclusterreceiver/internal/testutils"
 )
 
 func TestPodAndContainerMetricsReportCPUMetrics(t *testing.T) {

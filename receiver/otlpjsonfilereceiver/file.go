@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package otlpjsonfilereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver"
+package otlpjsonfilereceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/otlpjsonfilereceiver"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	rcvr "go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/adapter"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/fileconsumer"
 )
 
 const (

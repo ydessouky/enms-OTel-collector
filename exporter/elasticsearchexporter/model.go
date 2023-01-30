@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package elasticsearchexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
+package elasticsearchexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/elasticsearchexporter"
 
 import (
 	"bytes"
@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/elasticsearchexporter/internal/objmodel"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
 )
 
 type mappingModel interface {

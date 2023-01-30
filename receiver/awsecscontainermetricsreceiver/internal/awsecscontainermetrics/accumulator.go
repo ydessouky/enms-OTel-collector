@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package awsecscontainermetrics // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsecscontainermetricsreceiver/internal/awsecscontainermetrics"
+package awsecscontainermetrics // import "github.com/ydessouky/enms-OTel-collector/receiver/awsecscontainermetricsreceiver/internal/awsecscontainermetrics"
 
 import (
 	"time"
@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil"
 )
 
 // metricDataAccumulator defines the accumulator

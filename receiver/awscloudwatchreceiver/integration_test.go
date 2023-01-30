@@ -14,7 +14,7 @@
 
 //go:build integration
 
-package awscloudwatchreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscloudwatchreceiver"
+package awscloudwatchreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/awscloudwatchreceiver"
 
 import (
 	"context"

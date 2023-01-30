@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package resourcedetectionprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor"
+package resourcedetectionprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor"
 
 import (
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/ec2"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/consul"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/aws/ec2"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/consul"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/system"
 )
 
 // Config defines configuration for Resource processor.

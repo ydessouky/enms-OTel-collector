@@ -15,7 +15,7 @@
 package filtermetric
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
 )
 
 func createConfig(filters []string, matchType filterset.MatchType) *MatchProperties {

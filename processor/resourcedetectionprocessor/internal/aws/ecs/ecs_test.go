@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil/endpoints"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil/endpoints"
 )
 
 type mockMetaDataProvider struct {

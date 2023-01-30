@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metadata // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata"
+package metadata // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata"
 
 import (
 	"context"
@@ -24,14 +24,14 @@ import (
 	"go.opentelemetry.io/collector/featuregate"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/azure"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/ec2"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/ecs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/gcp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/k8s"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/system"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/provider"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/valid"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/azure"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/ec2"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/ecs"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/gcp"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/k8s"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/system"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/provider"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/valid"
 )
 
 const (
@@ -43,7 +43,7 @@ func init() {
 		HostnamePreviewFeatureGate,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("Use the 'preview' hostname resolution rules, which are consistent with Datadog cloud integration hostname resolution rules, and set 'host_metadata::hostname_source' to 'config_or_system' by default."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/10424"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/10424"),
 	)
 }
 

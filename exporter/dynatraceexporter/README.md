@@ -275,7 +275,7 @@ Default: `false`
 > per metric data point and any data point which exceeds this limit will be dropped.
 
 If you think you might exceed this limit, you should use the
-[transform processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor)
+[transform processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/transformprocessor)
 to apply a filter, so only a select subset of your resource attributes are converted.
 
 ```yaml

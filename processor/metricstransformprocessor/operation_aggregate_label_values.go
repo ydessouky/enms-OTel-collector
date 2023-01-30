@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metricstransformprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricstransformprocessor"
+package metricstransformprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/metricstransformprocessor"
 
 import (
 	"go.opentelemetry.io/collector/pdata/pcommon"

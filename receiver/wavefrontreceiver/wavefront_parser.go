@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package wavefrontreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/wavefrontreceiver"
+package wavefrontreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/wavefrontreceiver"
 
 import (
 	"fmt"
@@ -23,8 +23,8 @@ import (
 	metricspb "github.com/census-instrumentation/opencensus-proto/gen-go/metrics/v1"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver/protocol"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/collectdreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/receiver/collectdreceiver"
 )
 
 // WavefrontParser converts metrics in the Wavefront format, see

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dimensions // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/dimensions"
+package dimensions // import "github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/dimensions"
 
 import (
 	"bytes"
@@ -31,8 +31,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/sanitize"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/translation"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/sanitize"
 )
 
 // DimensionClient sends updates to dimensions to the SignalFx API

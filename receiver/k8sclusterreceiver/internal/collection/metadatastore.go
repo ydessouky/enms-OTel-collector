@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package collection // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/collection"
+package collection // import "github.com/ydessouky/enms-OTel-collector/receiver/k8sclusterreceiver/internal/collection"
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/gvk"
+	"github.com/ydessouky/enms-OTel-collector/receiver/k8sclusterreceiver/internal/gvk"
 )
 
 // metadataStore keeps track of required caches exposed by informers.

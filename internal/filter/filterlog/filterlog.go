@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package filterlog // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterlog"
+package filterlog // import "github.com/ydessouky/enms-OTel-collector/internal/filter/filterlog"
 
 import (
 	"context"
@@ -20,11 +20,11 @@ import (
 
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/expr"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filtermatcher"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottllog"
 )
 
 // NewSkipExpr creates a BoolExpr that on evaluation returns true if a log should NOT be processed or kept.

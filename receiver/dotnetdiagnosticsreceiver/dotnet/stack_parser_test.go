@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver/network"
+	"github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver/network"
 )
 
 func TestParseStackBlock(t *testing.T) {

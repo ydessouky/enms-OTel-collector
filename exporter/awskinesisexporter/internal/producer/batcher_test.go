@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumererror"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/batch"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/producer"
+	"github.com/ydessouky/enms-OTel-collector/exporter/awskinesisexporter/internal/batch"
+	"github.com/ydessouky/enms-OTel-collector/exporter/awskinesisexporter/internal/producer"
 )
 
 type MockKinesisAPI struct {

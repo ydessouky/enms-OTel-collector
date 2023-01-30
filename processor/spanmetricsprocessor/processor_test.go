@@ -39,8 +39,8 @@ import (
 	"go.uber.org/zap/zaptest"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor/internal/cache"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor/mocks"
+	"github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor/internal/cache"
+	"github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor/mocks"
 )
 
 const (

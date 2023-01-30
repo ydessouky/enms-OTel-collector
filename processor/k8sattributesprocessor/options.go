@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package k8sattributesprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor"
+package k8sattributesprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/k8sattributesprocessor"
 
 import (
 	"fmt"
@@ -22,8 +22,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"k8s.io/apimachinery/pkg/selection"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
+	"github.com/ydessouky/enms-OTel-collector/internal/k8sconfig"
+	"github.com/ydessouky/enms-OTel-collector/processor/k8sattributesprocessor/internal/kube"
 )
 
 const (
@@ -40,7 +40,7 @@ const (
 	metadataNode       = "node"
 	// Will be removed when new fields get merged to https://github.com/open-telemetry/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go
 	metadataPodStartTime = "k8s.pod.start_time"
-	// This one was deprecated, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9886
+	// This one was deprecated, see https://github.com/ydessouky/enms-OTel-collector/issues/9886
 	deprecatedMetadataCluster = "cluster"
 )
 

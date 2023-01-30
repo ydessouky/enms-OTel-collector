@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package tailsamplingprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
+package tailsamplingprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/tailsamplingprocessor"
 
 import (
 	"context"
@@ -31,9 +31,9 @@ import (
 	"go.uber.org/atomic"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/timeutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/idbatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/timeutils"
+	"github.com/ydessouky/enms-OTel-collector/processor/tailsamplingprocessor/internal/idbatcher"
+	"github.com/ydessouky/enms-OTel-collector/processor/tailsamplingprocessor/internal/sampling"
 )
 
 // policy combines a sampling policy evaluator with the destinations to be

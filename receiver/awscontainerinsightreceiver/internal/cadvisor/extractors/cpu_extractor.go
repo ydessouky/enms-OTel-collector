@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package extractors // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor/extractors"
+package extractors // import "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/cadvisor/extractors"
 
 import (
 	cInfo "github.com/google/cadvisor/info/v1"
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	awsmetrics "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
+	ci "github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight"
+	awsmetrics "github.com/ydessouky/enms-OTel-collector/internal/aws/metrics"
 )
 
 const (

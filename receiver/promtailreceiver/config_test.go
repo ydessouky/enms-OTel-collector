@@ -31,10 +31,10 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/operatortest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/adapter"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/operatortest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/testutil"
 )
 
 func TestLoadConfig(t *testing.T) {

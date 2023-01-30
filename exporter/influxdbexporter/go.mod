@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/influxdbexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/influxdbexporter
 
 go 1.18
 

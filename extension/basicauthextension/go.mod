@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/basicauthextension
+module github.com/ydessouky/enms-OTel-collector/extension/basicauthextension
 
 go 1.18
 

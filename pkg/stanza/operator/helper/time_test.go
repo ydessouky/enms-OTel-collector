@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/operatortest"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/operatortest"
 )
 
 func Test_setTimestampYear(t *testing.T) {

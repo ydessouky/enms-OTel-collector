@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package signalfxexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter"
+package signalfxexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter"
 
 import (
 	"context"
@@ -27,11 +27,11 @@ import (
 	"go.uber.org/zap"
 	"gopkg.in/yaml.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/correlation"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation/dpfilters"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/correlation"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/translation"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/translation/dpfilters"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr"
 )
 
 const (

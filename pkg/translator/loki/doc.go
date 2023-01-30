@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package loki provides translation helpers to convert between OTLP and Loki formats.
-package loki // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki"
+package loki // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/loki"

@@ -19,8 +19,8 @@
 package main
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/components"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelcontribcore"
+	"github.com/ydessouky/enms-OTel-collector/internal/components"
+	"github.com/ydessouky/enms-OTel-collector/internal/otelcontribcore"
 )
 
 func main() {

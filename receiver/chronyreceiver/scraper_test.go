@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/chrony"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/chronyreceiver/internal/chrony"
+	"github.com/ydessouky/enms-OTel-collector/receiver/chronyreceiver/internal/metadata"
 )
 
 type mockClient struct {

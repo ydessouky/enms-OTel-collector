@@ -20,9 +20,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottldatapoint"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlmetric"
+	"github.com/ydessouky/enms-OTel-collector/processor/transformprocessor/internal/common"
 )
 
 func Test_DataPointFunctions(t *testing.T) {

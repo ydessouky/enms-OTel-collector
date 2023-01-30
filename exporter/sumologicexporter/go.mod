@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/sumologicexporter
 
 go 1.18
 

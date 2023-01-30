@@ -17,9 +17,9 @@ package main
 import (
 	"path/filepath"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/configschema"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/configschema/docsgen/docsgen"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/components"
+	"github.com/ydessouky/enms-OTel-collector/cmd/configschema"
+	"github.com/ydessouky/enms-OTel-collector/cmd/configschema/docsgen/docsgen"
+	"github.com/ydessouky/enms-OTel-collector/internal/components"
 )
 
 func main() {

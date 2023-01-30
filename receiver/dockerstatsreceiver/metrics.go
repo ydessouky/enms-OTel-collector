@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dockerstatsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dockerstatsreceiver"
+package dockerstatsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/dockerstatsreceiver"
 
 import (
 	"fmt"
@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker"
+	"github.com/ydessouky/enms-OTel-collector/internal/docker"
 )
 
 const (

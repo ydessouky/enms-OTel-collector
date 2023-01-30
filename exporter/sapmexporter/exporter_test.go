@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exportertest"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
 	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 

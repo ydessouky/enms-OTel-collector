@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
 )
 
 func Test_newResourceEnhancer(t *testing.T) {

@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package promtailreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver"
+package promtailreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/promtailreceiver"
 
 import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/adapter"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
 )
 
 const (

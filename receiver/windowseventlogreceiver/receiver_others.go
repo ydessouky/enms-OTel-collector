@@ -15,7 +15,7 @@
 //go:build !windows
 // +build !windows
 
-package windowseventlogreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowseventlogreceiver"
+package windowseventlogreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/windowseventlogreceiver"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/adapter"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
 )
 
 const (

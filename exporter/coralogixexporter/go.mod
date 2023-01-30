@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/coralogixexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/coralogixexporter
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -53,9 +53,9 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
 replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../../pkg/translator/jaeger
 

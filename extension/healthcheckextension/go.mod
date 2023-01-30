@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension
+module github.com/ydessouky/enms-OTel-collector/extension/healthcheckextension
 
 go 1.18
 
 require (
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opencensus.io v0.24.0
 	go.opentelemetry.io/collector v0.68.0
@@ -49,6 +49,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
 retract v0.65.0

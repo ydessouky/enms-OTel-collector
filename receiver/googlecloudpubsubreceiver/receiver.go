@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package googlecloudpubsubreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver"
+package googlecloudpubsubreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/googlecloudpubsubreceiver"
 
 import (
 	"bytes"
@@ -38,7 +38,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/receiver/googlecloudpubsubreceiver/internal"
 )
 
 // https://cloud.google.com/pubsub/docs/reference/rpc/google.pubsub.v1#streamingpullrequest

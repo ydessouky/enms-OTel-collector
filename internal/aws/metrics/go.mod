@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics
+module github.com/ydessouky/enms-OTel-collector/internal/aws/metrics
 
 go 1.18
 

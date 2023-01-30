@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/internal"
+package internal // import "github.com/ydessouky/enms-OTel-collector/receiver/promtailreceiver/internal"
 import "github.com/prometheus/client_golang/prometheus"
 
 // Unregisterer is a Prometheus Registerer that can unregister all collectors

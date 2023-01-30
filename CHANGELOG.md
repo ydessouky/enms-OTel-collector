@@ -208,7 +208,7 @@
   and the CA is not in the system cert pool
   
 - `pkg/stanza`: Support to Customize bufio.SplitFunc (#14593)
-- `processor/transform`: Adds new configuration options that allow specifying the OTTL context to use when executing statements. See [Transform Processor README](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor#config) for more details. (#15381)
+- `processor/transform`: Adds new configuration options that allow specifying the OTTL context to use when executing statements. See [Transform Processor README](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/transformprocessor#config) for more details. (#15381)
   The existing configuration options will be deprecated in a future release.
   
 - `transformprocessor`: Added OTTL function ConvertCase into the Transform Processor (#16083)
@@ -767,7 +767,7 @@ in outgoing logs data.
   2. use Map type for attribute, add secondary index.
 
 - `postgresqlreceiver`: Moves metric attributes `table` and `database` to resource attributes. (#12960)
-  This move has been hidden behind a featuregate. Please see https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/postgresqlreceiver/README.md#feature-gate-configurations for more information transitioning.
+  This move has been hidden behind a featuregate. Please see https://github.com/ydessouky/enms-OTel-collector/blob/main/receiver/postgresqlreceiver/README.md#feature-gate-configurations for more information transitioning.
   This affects the following metrics.
   - postgresql.blocks_read
   - postgresql.commits
@@ -917,14 +917,14 @@ This version has been skipped.
       - `memcached.network.received`
 - `tracegen`: Moving component under `cmd` for consistency (#12474)
 - `datadogexporter`: Remove deprecated configuration features. (#9099, #9016, #8845, #8783, #8781, #8489, #8396)
-    - [Remove `env` in favor of `deployment.environment` semantic convention](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9016)
-    - [Remove `version` in favor of `service.version` semantic convention](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8783)
-    - [Remove `service` in favor of `service.name` semantic convention](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8781)
-    - [Remove `tags`, `send_metadata` and `use_resource_metadata` in favor of `host_metadata` section](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9099)
-    - [Remove `metrics::report_quantiles` in favor of `metrics::summaries::mode`](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8845)
-    - [Remove `metrics::send_monotonic_counter` in favor of `metrics::sums::cumulative_monotonic_mode`](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8489)
-    - [Remove automatic support for environment variable detection in favor of Collector's `${}` syntax](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8396)
-    - [Remove `metrics::instrumentation_library_metadata_as_tags` in favor of `metrics::instrumentation_scope_as_tags`](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/11135)
+    - [Remove `env` in favor of `deployment.environment` semantic convention](https://github.com/ydessouky/enms-OTel-collector/issues/9016)
+    - [Remove `version` in favor of `service.version` semantic convention](https://github.com/ydessouky/enms-OTel-collector/issues/8783)
+    - [Remove `service` in favor of `service.name` semantic convention](https://github.com/ydessouky/enms-OTel-collector/issues/8781)
+    - [Remove `tags`, `send_metadata` and `use_resource_metadata` in favor of `host_metadata` section](https://github.com/ydessouky/enms-OTel-collector/issues/9099)
+    - [Remove `metrics::report_quantiles` in favor of `metrics::summaries::mode`](https://github.com/ydessouky/enms-OTel-collector/issues/8845)
+    - [Remove `metrics::send_monotonic_counter` in favor of `metrics::sums::cumulative_monotonic_mode`](https://github.com/ydessouky/enms-OTel-collector/issues/8489)
+    - [Remove automatic support for environment variable detection in favor of Collector's `${}` syntax](https://github.com/ydessouky/enms-OTel-collector/issues/8396)
+    - [Remove `metrics::instrumentation_library_metadata_as_tags` in favor of `metrics::instrumentation_scope_as_tags`](https://github.com/ydessouky/enms-OTel-collector/pull/11135)
 
 - `datadogexporter`: Remove deprecated `config` package. (#8373)
 - `observiqexporter`: Remove the observiq exporter (#12406)
@@ -1039,7 +1039,7 @@ This version has been skipped.
 - `datadogexporter`: (Under `exporter.datadog.hostname.preview` feature gate) Remove `docker` hostname detector (#11834)
 - `k8sclusterreceiver`: The `receiver.k8sclusterreceiver.reportCpuMetricsAsDouble` feature gate has been removed (#10838)
     - If users were disabling this feature gate, they may have to update
-      monitoring for a few Kubernetes cpu metrics. For more details see [feature-gate-configurations](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.54.0/receiver/k8sclusterreceiver#feature-gate-configurations).
+      monitoring for a few Kubernetes cpu metrics. For more details see [feature-gate-configurations](https://github.com/ydessouky/enms-OTel-collector/tree/v0.54.0/receiver/k8sclusterreceiver#feature-gate-configurations).
 
 - `prometheusexporter`: Automatically rename metrics with units to follow Prometheus naming convention (#8950)
 
@@ -1374,10 +1374,10 @@ This version has been skipped.
 ### ⚠️ Warning  ⚠️
 
 This release contains an issue in
-[Prometheus receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/prometheusreceiver)
+[Prometheus receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/prometheusreceiver)
 causing 30% memory consumption increase when there is a lot of target churn. The issue is currently being
 investigated and will be fixed in one of the new releases. More details:
-https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9278.
+https://github.com/ydessouky/enms-OTel-collector/issues/9278.
 
 ### 🛑 Breaking changes 🛑
 
@@ -1391,7 +1391,7 @@ https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9278.
 - `attributesprocessor`: Remove log names from filters (#9131)
 - `k8sclusterreceiver`: The `receiver.k8sclusterreceiver.reportCpuMetricsAsDouble` feature gate is now enabled by default (#9367)
   - Users may have to update monitoring for a few Kubernetes cpu metrics, for
-    more details see [feature-gate-configurations](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.54.0/receiver/k8sclusterreceiver#feature-gate-configurations).
+    more details see [feature-gate-configurations](https://github.com/ydessouky/enms-OTel-collector/tree/v0.54.0/receiver/k8sclusterreceiver#feature-gate-configurations).
 
 ### 🚩 Deprecations 🚩
 
@@ -1992,7 +1992,7 @@ https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9278.
 
 ### 🚀 New components 🚀
 
-- [`journald` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/journaldreceiver) to parse Journald events from systemd journal using the [opentelemetry-log-collection](https://github.com/open-telemetry/opentelemetry-log-collection) library
+- [`journald` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/journaldreceiver) to parse Journald events from systemd journal using the [opentelemetry-log-collection](https://github.com/open-telemetry/opentelemetry-log-collection) library
 
 ### 🛑 Breaking changes 🛑
 
@@ -2094,31 +2094,31 @@ https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9278.
 
 ### 🚀 New components 🚀
 
-- [`cumulativetodelta` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/cumulativetodeltaprocessor) to convert cumulative sum metrics to cumulative delta
+- [`cumulativetodelta` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/cumulativetodeltaprocessor) to convert cumulative sum metrics to cumulative delta
 
-- [`file` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/fileexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`jaeger` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/jaegerexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`kafka` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/kafkaexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`opencensus` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/opencensusexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`prometheus` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/prometheusexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`prometheusremotewrite` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/prometheusremotewriteexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`zipkin` exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/zipkinexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`attribute` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/attributesprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`filter` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/filterprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`probabilisticsampler` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/probabilisticsamplerprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`resource` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/resourceprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`span` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/spanprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`hostmetrics` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/hostmetricsreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`jaeger` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/jaegerreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`kafka` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/kafkareceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`opencensus` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/opencensusreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`prometheus` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/prometheusreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`zipkin` receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/zipkinreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`bearertokenauth` extension](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/bearertokenauthextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`healthcheck` extension](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/healthcheckextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`oidcauth` extension](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/oidcauthextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`pprof` extension](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/pprofextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
-- [`testbed`](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/testbed) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`file` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/fileexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`jaeger` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/jaegerexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`kafka` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/kafkaexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`opencensus` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/opencensusexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`prometheus` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/prometheusexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`prometheusremotewrite` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/prometheusremotewriteexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`zipkin` exporter](https://github.com/ydessouky/enms-OTel-collector/tree/main/exporter/zipkinexporter) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`attribute` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/attributesprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`filter` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/filterprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`probabilisticsampler` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/probabilisticsamplerprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`resource` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/resourceprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`span` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/spanprocessor) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`hostmetrics` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/hostmetricsreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`jaeger` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/jaegerreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`kafka` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/kafkareceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`opencensus` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/opencensusreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`prometheus` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/prometheusreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`zipkin` receiver](https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/zipkinreceiver) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`bearertokenauth` extension](https://github.com/ydessouky/enms-OTel-collector/tree/main/extension/bearertokenauthextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`healthcheck` extension](https://github.com/ydessouky/enms-OTel-collector/tree/main/extension/healthcheckextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`oidcauth` extension](https://github.com/ydessouky/enms-OTel-collector/tree/main/extension/oidcauthextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`pprof` extension](https://github.com/ydessouky/enms-OTel-collector/tree/main/extension/pprofextension) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
+- [`testbed`](https://github.com/ydessouky/enms-OTel-collector/tree/main/testbed) from core repository ([#3474](https://github.com/open-telemetry/opentelemetry-collector/issues/3474))
 
 ### 💡 Enhancements 💡
 
@@ -2132,7 +2132,7 @@ The OpenTelemetry Collector Contrib contains everything in the [opentelemetry-co
 
 ### 🚀 New components 🚀
 
-- [`cumulativetodelta` processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/cumulativetodeltaprocessor) to convert cumulative sum metrics to cumulative delta
+- [`cumulativetodelta` processor](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/cumulativetodeltaprocessor) to convert cumulative sum metrics to cumulative delta
 
 ### 💡 Enhancements 💡
 
@@ -2831,7 +2831,7 @@ The OpenTelemetry Collector Contrib contains everything in the [opentelemetry-co
 - Move signalfx correlation code out of `sapm` to `signalfxcorrelation` exporter (#1376)
 - Move Splunk specific utils outside of common (#1306)
 - `stackdriver` exporter:
-    - Config options `metric_prefix` & `skip_create_metric_descriptor` are now nested under `metric`, see [README](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.14.0/exporter/stackdriverexporter/README.md).
+    - Config options `metric_prefix` & `skip_create_metric_descriptor` are now nested under `metric`, see [README](https://github.com/ydessouky/enms-OTel-collector/blob/v0.14.0/exporter/stackdriverexporter/README.md).
     - Trace status codes no longer reflect gRPC codes as per spec changes: open-telemetry/opentelemetry-specification#1067
 - `datadog` exporter: Remove option to change the namespace prefix (#1483)
 
@@ -3393,9 +3393,9 @@ Released 2020-01-11
 First release of OpenTelemetry Collector Contrib.
 
 
-[v0.3.0]: https://github.com/open-telemetry/opentelemetry-collector-contrib/compare/v0.2.8...v0.3.0
-[v0.2.8]: https://github.com/open-telemetry/opentelemetry-collector-contrib/compare/v0.2.7...v0.2.8
-[v0.2.7]: https://github.com/open-telemetry/opentelemetry-collector-contrib/compare/v0.2.6...v0.2.7
-[v0.2.6]: https://github.com/open-telemetry/opentelemetry-collector-contrib/compare/v0.0.5...v0.2.6
-[v0.0.5]: https://github.com/open-telemetry/opentelemetry-collector-contrib/compare/v0.0.1...v0.0.5
-[v0.0.1]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.0.1
+[v0.3.0]: https://github.com/ydessouky/enms-OTel-collector/compare/v0.2.8...v0.3.0
+[v0.2.8]: https://github.com/ydessouky/enms-OTel-collector/compare/v0.2.7...v0.2.8
+[v0.2.7]: https://github.com/ydessouky/enms-OTel-collector/compare/v0.2.6...v0.2.7
+[v0.2.6]: https://github.com/ydessouky/enms-OTel-collector/compare/v0.0.5...v0.2.6
+[v0.0.5]: https://github.com/ydessouky/enms-OTel-collector/compare/v0.0.1...v0.0.5
+[v0.0.1]: https://github.com/ydessouky/enms-OTel-collector/tree/v0.0.1

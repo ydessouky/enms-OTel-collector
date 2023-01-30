@@ -26,7 +26,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/receiver/statsdreceiver/protocol"
 )
 
 type testHost struct {

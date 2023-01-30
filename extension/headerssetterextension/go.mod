@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension
+module github.com/ydessouky/enms-OTel-collector/extension/headerssetterextension
 
 go 1.18
 

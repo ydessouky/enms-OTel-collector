@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jmxreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/jmxreceiver
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
 	github.com/shirou/gopsutil/v3 v3.22.10
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
@@ -84,6 +84,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
 retract v0.65.0

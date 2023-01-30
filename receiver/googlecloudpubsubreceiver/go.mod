@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/googlecloudpubsubreceiver
 
 go 1.18
 

@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/aerospikereceiver"
 )
 
 func TestNewFactory(t *testing.T) {

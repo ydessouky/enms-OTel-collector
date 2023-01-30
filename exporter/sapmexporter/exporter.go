@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package sapmexporter exports trace data using Splunk's SAPM protocol.
-package sapmexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter"
+package sapmexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/sapmexporter"
 
 import (
 	"context"
@@ -29,8 +29,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr"
 	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
 )
 

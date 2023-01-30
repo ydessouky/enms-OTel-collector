@@ -27,7 +27,7 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	model_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/model/v1"
+	model_v1 "github.com/ydessouky/enms-OTel-collector/receiver/solacereceiver/model/v1"
 )
 
 // Validate entire unmarshal flow

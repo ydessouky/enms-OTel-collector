@@ -29,7 +29,7 @@ import (
 	rcvr "go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
 )
 
 type mockHostFactories struct {

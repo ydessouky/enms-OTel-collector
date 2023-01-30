@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkareceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver"
+package kafkareceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/kafkareceiver"
 
 import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv1"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv2"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin/zipkinv1"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin/zipkinv2"
 )
 
 // TracesUnmarshaler deserializes the message body.

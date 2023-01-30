@@ -25,9 +25,9 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/ec2"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/aws/ec2"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/system"
 )
 
 func TestLoadConfig(t *testing.T) {

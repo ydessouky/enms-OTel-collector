@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/zipkinreceiver
 
 go 1.18
 
 require (
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin v0.68.0
 	github.com/openzipkin/zipkin-go v0.4.1
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
@@ -56,10 +56,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../pkg/translator/zipkin
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin => ../../pkg/translator/zipkin
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../pkg/translator/opencensus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus => ../../pkg/translator/opencensus
 
 retract v0.65.0

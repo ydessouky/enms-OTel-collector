@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package collection // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/collection"
+package collection // import "github.com/ydessouky/enms-OTel-collector/receiver/k8sclusterreceiver/internal/collection"
 
 import (
 	metricspb "github.com/census-instrumentation/opencensus-proto/gen-go/metrics/v1"
@@ -20,8 +20,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	autoscalingv2beta2 "k8s.io/api/autoscaling/v2beta2"
 
-	metadata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/utils"
+	metadata "github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/k8sclusterreceiver/internal/utils"
 )
 
 var hpaMaxReplicasMetric = &metricspb.MetricDescriptor{

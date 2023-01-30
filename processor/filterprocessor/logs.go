@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package filterprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor"
+package filterprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/filterprocessor"
 
 import (
 	"context"
@@ -23,11 +23,11 @@ import (
 	"go.opentelemetry.io/collector/processor/processorhelper"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterlog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/internal/common"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/expr"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterlog"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottllog"
+	"github.com/ydessouky/enms-OTel-collector/processor/filterprocessor/internal/common"
 )
 
 type filterLogProcessor struct {

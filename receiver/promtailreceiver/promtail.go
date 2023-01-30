@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package promtailreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver"
+package promtailreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/promtailreceiver"
 
 import (
 	"context"
@@ -23,10 +23,10 @@ import (
 	"github.com/grafana/loki/clients/pkg/promtail/targets"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/helper"
+	"github.com/ydessouky/enms-OTel-collector/receiver/promtailreceiver/internal"
 )
 
 const (

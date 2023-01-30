@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/splunkhecexporter
 
 go 1.18
 
 require (
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/splunk v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -48,10 +48,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../../internal/splunk
+replace github.com/ydessouky/enms-OTel-collector/internal/splunk => ../../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
+replace github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
 
 retract v0.65.0

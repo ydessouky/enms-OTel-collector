@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package awscontainerinsightreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver"
+package awscontainerinsightreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver"
 
 import (
 	"context"
@@ -25,12 +25,12 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor"
-	ecsinfo "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/ecsInfo"
-	hostInfo "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/host"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/k8sapiserver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/stores"
+	ci "github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/cadvisor"
+	ecsinfo "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/ecsInfo"
+	hostInfo "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/host"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/k8sapiserver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/stores"
 )
 
 var _ receiver.Metrics = (*awsContainerInsightReceiver)(nil)

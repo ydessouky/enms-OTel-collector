@@ -10,7 +10,7 @@ Exports data to Humio using JSON over the HTTP [Ingest API](https://library.humi
 
 **Humio now known as LogScale beginning with version 1.68 supports OTLP using HTTP and no longer requires a product specific exporter.**
 
-See [#17013](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/17013) for more information.
+See [#17013](https://github.com/ydessouky/enms-OTel-collector/issues/17013) for more information.
 
 ## Getting Started
 

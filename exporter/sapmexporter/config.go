@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package sapmexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter"
+package sapmexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/sapmexporter"
 
 import (
 	"errors"
@@ -22,7 +22,7 @@ import (
 	sapmclient "github.com/signalfx/sapm-proto/client"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
 )
 
 const (

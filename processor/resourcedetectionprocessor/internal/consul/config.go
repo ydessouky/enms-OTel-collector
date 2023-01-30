@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package consul // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/consul"
+package consul // import "github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/consul"
 
 // The struct requires no user-specified fields by default as consul agent's default
 // configuration will be provided to the API client.

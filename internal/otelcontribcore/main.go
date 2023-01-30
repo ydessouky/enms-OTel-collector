@@ -15,7 +15,7 @@
 // Program otelcontribcol is an extension to the OpenTelemetry Collector
 // that includes additional components, some vendor-specific, contributed
 // from the wider community.
-package otelcontribcore // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelcontribcore"
+package otelcontribcore // import "github.com/ydessouky/enms-OTel-collector/internal/otelcontribcore"
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/otelcol"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelcontribcore/internal/version"
+	"github.com/ydessouky/enms-OTel-collector/internal/otelcontribcore/internal/version"
 )
 
 type ComponentsFunc func() (otelcol.Factories, error)

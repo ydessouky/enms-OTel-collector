@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudfoundryreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/cloudfoundryreceiver
 
 go 1.18
 

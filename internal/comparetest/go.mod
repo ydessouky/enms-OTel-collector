@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest
+module github.com/ydessouky/enms-OTel-collector/internal/comparetest
 
 go 1.18
 

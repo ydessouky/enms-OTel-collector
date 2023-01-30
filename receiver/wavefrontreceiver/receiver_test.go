@@ -30,8 +30,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	internaldata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
+	internaldata "github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
 )
 
 func Test_wavefrontreceiver_EndToEnd(t *testing.T) {

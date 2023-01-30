@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
 )
 
 func BenchmarkConvertSimple(b *testing.B) {

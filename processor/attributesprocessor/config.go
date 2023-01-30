@@ -12,15 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package attributesprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor"
+package attributesprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/attributesprocessor"
 
 import (
 	"errors"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/attraction"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
 )
 
 // Config specifies the set of attributes to be inserted, updated, upserted and

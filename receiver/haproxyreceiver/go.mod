@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/haproxyreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/haproxyreceiver
 
 go 1.18
 
@@ -47,10 +47,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/ydessouky/enms-OTel-collector/internal/filter => ../../internal/filter
 
 retract v0.65.0
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl => ../../pkg/ottl
+replace github.com/ydessouky/enms-OTel-collector/pkg/ottl => ../../pkg/ottl

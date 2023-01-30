@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/aerospikereceiver
 
 go 1.18
 
 require (
 	github.com/aerospike/aerospike-client-go/v6 v6.7.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/comparetest v0.68.0
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
 	go.opentelemetry.io/collector v0.68.0
@@ -68,6 +68,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest => ../../internal/comparetest
+replace github.com/ydessouky/enms-OTel-collector/internal/comparetest => ../../internal/comparetest
 
 retract v0.65.0

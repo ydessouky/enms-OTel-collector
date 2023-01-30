@@ -1,16 +1,16 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter
 
 go 1.18
 
 require (
 	github.com/gobwas/glob v0.2.3
 	github.com/gogo/protobuf v1.3.2
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/splunk v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx v0.68.0
 	github.com/shirou/gopsutil/v3 v3.22.10
 	github.com/signalfx/com_signalfx_metrics_protobuf v0.0.3
 	github.com/signalfx/signalfx-agent/pkg/apm v0.0.0-20220920175102-539ae8d8ba8e
@@ -80,16 +80,16 @@ require (
 // TODO: remove once the next release of jaeger is out
 replace github.com/jaegertracing/jaeger v1.39.0 => github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../../internal/splunk
+replace github.com/ydessouky/enms-OTel-collector/internal/splunk => ../../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
+replace github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata => ../../pkg/experimentalmetricmetadata
+replace github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata => ../../pkg/experimentalmetricmetadata
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx => ../../pkg/translator/signalfx
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx => ../../pkg/translator/signalfx
 
 retract v0.65.0

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package correlation // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/correlation"
+package correlation // import "github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/correlation"
 
 import (
 	"context"
@@ -27,8 +27,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/timeutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/timeutils"
+	"github.com/ydessouky/enms-OTel-collector/internal/splunk"
 )
 
 // Tracker correlation

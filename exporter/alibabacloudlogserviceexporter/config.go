@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package alibabacloudlogserviceexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/alibabacloudlogserviceexporter"
+package alibabacloudlogserviceexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/alibabacloudlogserviceexporter"
 
 // Config defines configuration for AlibabaCloud Log Service exporter.
 type Config struct {

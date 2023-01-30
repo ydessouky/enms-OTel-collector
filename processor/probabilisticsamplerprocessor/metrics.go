@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package probabilisticsamplerprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+package probabilisticsamplerprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/probabilisticsamplerprocessor"
 
 import (
 	"go.opencensus.io/stats"

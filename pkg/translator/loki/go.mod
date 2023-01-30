@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki
+module github.com/ydessouky/enms-OTel-collector/pkg/translator/loki
 
 go 1.18
 
 require (
 	github.com/go-logfmt/logfmt v0.5.1
 	github.com/gogo/protobuf v1.3.2
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	github.com/prometheus/common v0.39.0
 	github.com/prometheus/prometheus v0.40.7
 	github.com/stretchr/testify v1.8.1
@@ -34,6 +34,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../../internal/coreinternal
 
 retract v0.65.0

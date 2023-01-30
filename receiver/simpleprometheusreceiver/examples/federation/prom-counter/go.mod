@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/simpleprometheusreceiver/examples/federation/prom-counter
+module github.com/ydessouky/enms-OTel-collector/receiver/simpleprometheusreceiver/examples/federation/prom-counter
 
 go 1.18
 

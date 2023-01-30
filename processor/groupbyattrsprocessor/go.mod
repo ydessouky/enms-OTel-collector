@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbyattrsprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/groupbyattrsprocessor
 
 go 1.18
 
@@ -44,8 +44,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbytraceprocessor => ../../processor/groupbytraceprocessor
+replace github.com/ydessouky/enms-OTel-collector/processor/groupbytraceprocessor => ../../processor/groupbytraceprocessor
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal => ../../pkg/batchpersignal
+replace github.com/ydessouky/enms-OTel-collector/pkg/batchpersignal => ../../pkg/batchpersignal
 
 retract v0.65.0

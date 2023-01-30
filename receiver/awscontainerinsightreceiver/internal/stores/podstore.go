@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stores // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/stores"
+package stores // import "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/stores"
 
 import (
 	"context"
@@ -27,10 +27,10 @@ import (
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/k8s/k8sclient"
-	awsmetrics "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/stores/kubeletutil"
+	ci "github.com/ydessouky/enms-OTel-collector/internal/aws/containerinsight"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/k8s/k8sclient"
+	awsmetrics "github.com/ydessouky/enms-OTel-collector/internal/aws/metrics"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/stores/kubeletutil"
 )
 
 const (

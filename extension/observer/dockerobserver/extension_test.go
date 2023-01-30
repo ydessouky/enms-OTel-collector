@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
 )
 
 func containerJSON(t *testing.T) dtypes.ContainerJSON {

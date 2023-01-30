@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package awsxrayreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver"
+package awsxrayreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/awsxrayreceiver"
 
 import (
 	"context"
@@ -25,10 +25,10 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/internal/translator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/internal/udppoller"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/proxy"
+	awsxray "github.com/ydessouky/enms-OTel-collector/internal/aws/xray"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awsxrayreceiver/internal/translator"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awsxrayreceiver/internal/udppoller"
 )
 
 const (

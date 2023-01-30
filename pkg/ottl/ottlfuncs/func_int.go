@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ottlfuncs // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
+package ottlfuncs // import "github.com/ydessouky/enms-OTel-collector/pkg/ottl/ottlfuncs"
 
 import (
 	"context"
 	"strconv"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl"
 )
 
 func Int[K any](target ottl.Getter[K]) (ottl.ExprFunc[K], error) {

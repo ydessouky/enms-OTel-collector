@@ -15,7 +15,7 @@
 // This file was taken from Loki (https://github.com/grafana/loki/tree/74906222c6fc43b47adcfdf69b93f5630d437fcd/pkg/logproto),
 // The original file does not have a license header but was licensed as Apache 2.0 (https://github.com/grafana/loki/blob/74906222c6fc43b47adcfdf69b93f5630d437fcd/LICENSING.md)
 
-package logproto // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki/logproto"
+package logproto // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/loki/logproto"
 
 import (
 	"errors"

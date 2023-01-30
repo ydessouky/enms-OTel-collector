@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus"
 )
 
 type testMetadataStore map[string]scrape.MetricMetadata

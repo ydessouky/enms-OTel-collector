@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package signalfxexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter"
+package signalfxexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter"
 
 import (
 	"compress/gzip"
@@ -32,10 +32,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/dimensions"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/hostmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
-	metadata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/dimensions"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/hostmetadata"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter/internal/translation"
+	metadata "github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata"
 )
 
 // TODO: Find a place for this to be shared.

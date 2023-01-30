@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package logicmonitorexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logicmonitorexporter"
+package logicmonitorexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/logicmonitorexporter"
 
 import (
 	"fmt"
@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry"
 )
 
 // Config defines configuration for LogicMonitor exporter.

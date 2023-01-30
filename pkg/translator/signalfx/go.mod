@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx
+module github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
 	github.com/signalfx/com_signalfx_metrics_protobuf v0.0.3
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector/pdata v1.0.0-rc2
@@ -29,6 +29,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../../internal/common
 
 retract v0.65.0

@@ -1,14 +1,14 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/opencensusreceiver
 
 go 1.18
 
 require (
 	github.com/census-instrumentation/opencensus-proto v0.4.1
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.14.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent v0.68.0
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus v0.68.0
 	github.com/rs/cors v1.8.2
 	github.com/soheilhy/cmux v0.1.5
 	github.com/stretchr/testify v1.8.1
@@ -72,12 +72,12 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent => ../../internal/sharedcomponent
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../pkg/translator/opencensus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus => ../../pkg/translator/opencensus
 
 retract v0.65.0

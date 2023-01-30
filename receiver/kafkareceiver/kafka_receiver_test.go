@@ -38,7 +38,7 @@ import (
 	"go.uber.org/zap/zaptest/observer"
 
 	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/testdata"
 )
 
 func TestNewTracesReceiver_version_err(t *testing.T) {

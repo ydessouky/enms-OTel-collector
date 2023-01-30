@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metrics // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
+package metrics // import "github.com/ydessouky/enms-OTel-collector/internal/aws/metrics"
 
 import (
 	"sync"

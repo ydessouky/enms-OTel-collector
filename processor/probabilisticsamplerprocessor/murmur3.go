@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package probabilisticsamplerprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+package probabilisticsamplerprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/probabilisticsamplerprocessor"
 
 // hash is a murmur3 hash function, see http://en.wikipedia.org/wiki/MurmurHash
 func hash(key []byte, seed uint32) (hash uint32) {

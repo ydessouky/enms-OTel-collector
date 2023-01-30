@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	dtconfig "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry"
+	dtconfig "github.com/ydessouky/enms-OTel-collector/exporter/dynatraceexporter/config"
+	"github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry"
 )
 
 // Test that the factory creates the default configuration

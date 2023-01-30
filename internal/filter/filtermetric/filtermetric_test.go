@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlmetric"
 )
 
 var (

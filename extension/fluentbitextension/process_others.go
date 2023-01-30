@@ -15,7 +15,7 @@
 //go:build !linux
 // +build !linux
 
-package fluentbitextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/fluentbitextension"
+package fluentbitextension // import "github.com/ydessouky/enms-OTel-collector/extension/fluentbitextension"
 
 import (
 	"os/exec"

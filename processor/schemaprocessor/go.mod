@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/schemaprocessor
 
 go 1.18
 

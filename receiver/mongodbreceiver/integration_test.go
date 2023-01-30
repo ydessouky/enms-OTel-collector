@@ -32,8 +32,8 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
 )
 
 const (
@@ -79,7 +79,7 @@ var (
 
 func TestMongodbIntegration(t *testing.T) {
 	t.Run("Running mongodb 4.0", func(t *testing.T) {
-		t.Skip("Refer to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/17070")
+		t.Skip("Refer to https://github.com/ydessouky/enms-OTel-collector/issues/17070")
 		t.Parallel()
 		container, endpoint := getContainer(t, containerRequest4_0, setupScript)
 		defer func() {
@@ -119,7 +119,7 @@ func TestMongodbIntegration(t *testing.T) {
 		require.NoError(t, err)
 	})
 	t.Run("Running mongodb 4.2", func(t *testing.T) {
-		t.Skip("Refer to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/17070")
+		t.Skip("Refer to https://github.com/ydessouky/enms-OTel-collector/issues/17070")
 		t.Parallel()
 		container, endpoint := getContainer(t, containerRequest4_2, setupScript)
 		defer func() {

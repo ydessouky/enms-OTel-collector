@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/influxdbreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/influxdbreceiver
 
 go 1.18
 
@@ -6,7 +6,7 @@ require (
 	github.com/influxdata/influxdb-observability/common v0.2.33
 	github.com/influxdata/influxdb-observability/influx2otel v0.2.33
 	github.com/influxdata/line-protocol/v2 v2.2.1
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
 	go.opentelemetry.io/collector/consumer v0.68.0
@@ -49,6 +49,6 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../../internal/common
 
 retract v0.65.0

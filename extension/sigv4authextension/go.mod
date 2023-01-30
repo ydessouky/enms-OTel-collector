@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension
+module github.com/ydessouky/enms-OTel-collector/extension/sigv4authextension
 
 go 1.18
 

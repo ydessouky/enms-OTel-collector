@@ -34,9 +34,9 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/env"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/gcp"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/env"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal/gcp"
 )
 
 type MockDetector struct {

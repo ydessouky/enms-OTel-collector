@@ -27,10 +27,10 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/goldendataset"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/occonventions"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/testdata"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/tracetranslator"
 )
 
 func TestInternalTraceStateToOC(t *testing.T) {

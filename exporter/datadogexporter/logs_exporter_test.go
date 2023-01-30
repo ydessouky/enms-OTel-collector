@@ -27,9 +27,9 @@ import (
 	"go.opentelemetry.io/collector/exporter/exportertest"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/testutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/testdata"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
 )
 
 func TestLogsExporter(t *testing.T) {

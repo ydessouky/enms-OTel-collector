@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dynatraceexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter"
+package dynatraceexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/dynatraceexporter"
 
 import (
 	"bytes"
@@ -32,9 +32,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/internal/serialization"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/ttlmap"
+	"github.com/ydessouky/enms-OTel-collector/exporter/dynatraceexporter/config"
+	"github.com/ydessouky/enms-OTel-collector/exporter/dynatraceexporter/internal/serialization"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/ttlmap"
 )
 
 const (

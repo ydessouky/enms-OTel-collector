@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage
+module github.com/ydessouky/enms-OTel-collector/extension/storage
 
 go 1.18
 

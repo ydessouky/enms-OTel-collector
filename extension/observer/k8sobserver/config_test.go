@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/k8sconfig"
 )
 
 func TestLoadConfig(t *testing.T) {

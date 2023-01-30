@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/parquetexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/parquetexporter
 
 go 1.18
 

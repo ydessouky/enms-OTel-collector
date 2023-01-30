@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dotnet // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver/dotnet"
+package dotnet // import "github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver/dotnet"
 
-import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver/network"
+import "github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver/network"
 
 type eventHeader struct {
 	metadataID        uint32

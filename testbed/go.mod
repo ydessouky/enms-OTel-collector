@@ -1,28 +1,28 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/testbed
+module github.com/ydessouky/enms-OTel-collector/testbed
 
 go 1.18
 
 require (
 	github.com/fluent/fluent-logger-golang v1.9.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/carbonexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/opencensusexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/zipkinexporter v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sapmreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/signalfxreceiver v0.0.0-00010101000000-000000000000
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkhecreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/testbed/mockdatareceivers/mockawsxrayreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/carbonexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/opencensusexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/prometheusexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/sapmexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/zipkinexporter v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/common v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/splunk v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/jaegerreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/opencensusreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/sapmreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/signalfxreceiver v0.0.0-00010101000000-000000000000
+	github.com/ydessouky/enms-OTel-collector/receiver/splunkhecreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/receiver/zipkinreceiver v0.68.0
+	github.com/ydessouky/enms-OTel-collector/testbed/mockdatareceivers/mockawsxrayreceiver v0.68.0
 	github.com/prometheus/common v0.39.0
 	github.com/prometheus/prometheus v0.40.7
 	github.com/shirou/gopsutil/v3 v3.22.10
@@ -152,15 +152,15 @@ require (
 	github.com/mostynb/go-grpc-compression v1.1.17 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry v0.68.0 // indirect
 	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx v0.68.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx v0.68.0 // indirect
+	github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin v0.68.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
@@ -235,66 +235,66 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/carbonexporter => ../exporter/carbonexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/carbonexporter => ../exporter/carbonexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter => ../exporter/jaegerexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter => ../exporter/jaegerexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/opencensusexporter => ../exporter/opencensusexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/opencensusexporter => ../exporter/opencensusexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter => ../exporter/prometheusexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/prometheusexporter => ../exporter/prometheusexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../exporter/prometheusremotewriteexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/prometheusremotewriteexporter => ../exporter/prometheusremotewriteexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter => ../exporter/sapmexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/sapmexporter => ../exporter/sapmexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter => ../exporter/signalfxexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter => ../exporter/signalfxexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../exporter/splunkhecexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/splunkhecexporter => ../exporter/splunkhecexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/zipkinexporter => ../exporter/zipkinexporter
+replace github.com/ydessouky/enms-OTel-collector/exporter/zipkinexporter => ../exporter/zipkinexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../internal/common
+replace github.com/ydessouky/enms-OTel-collector/internal/common => ../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../internal/sharedcomponent
+replace github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent => ../internal/sharedcomponent
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../internal/splunk
+replace github.com/ydessouky/enms-OTel-collector/internal/splunk => ../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../pkg/batchperresourceattr
+replace github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr => ../pkg/batchperresourceattr
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata => ../pkg/experimentalmetricmetadata
+replace github.com/ydessouky/enms-OTel-collector/pkg/experimentalmetricmetadata => ../pkg/experimentalmetricmetadata
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../pkg/translator/opencensus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus => ../pkg/translator/opencensus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus => ../pkg/translator/prometheus
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus => ../pkg/translator/prometheus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../pkg/translator/prometheusremotewrite
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheusremotewrite => ../pkg/translator/prometheusremotewrite
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx => ../pkg/translator/signalfx
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/signalfx => ../pkg/translator/signalfx
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin => ../pkg/translator/zipkin
+replace github.com/ydessouky/enms-OTel-collector/pkg/translator/zipkin => ../pkg/translator/zipkin
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver => ../receiver/carbonreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver => ../receiver/carbonreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver => ../receiver/jaegerreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/jaegerreceiver => ../receiver/jaegerreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver => ../receiver/opencensusreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/opencensusreceiver => ../receiver/opencensusreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../receiver/prometheusreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver => ../receiver/prometheusreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sapmreceiver => ../receiver/sapmreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/sapmreceiver => ../receiver/sapmreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/signalfxreceiver => ../receiver/signalfxreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/signalfxreceiver => ../receiver/signalfxreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkhecreceiver => ../receiver/splunkhecreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/splunkhecreceiver => ../receiver/splunkhecreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver => ../receiver/zipkinreceiver
+replace github.com/ydessouky/enms-OTel-collector/receiver/zipkinreceiver => ../receiver/zipkinreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/testbed/mockdatareceivers/mockawsxrayreceiver => ../testbed/mockdatareceivers/mockawsxrayreceiver
+replace github.com/ydessouky/enms-OTel-collector/testbed/mockdatareceivers/mockawsxrayreceiver => ../testbed/mockdatareceivers/mockawsxrayreceiver
 
 replace github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger => ../pkg/translator/jaeger
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../pkg/resourcetotelemetry
+replace github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry => ../pkg/resourcetotelemetry
 
 retract v0.65.0

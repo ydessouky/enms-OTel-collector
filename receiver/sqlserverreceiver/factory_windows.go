@@ -15,7 +15,7 @@
 //go:build windows
 // +build windows
 
-package sqlserverreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver"
+package sqlserverreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/sqlserverreceiver"
 
 import (
 	"context"

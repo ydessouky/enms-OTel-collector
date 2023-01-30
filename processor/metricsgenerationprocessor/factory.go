@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metricsgenerationprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricsgenerationprocessor"
+package metricsgenerationprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/metricsgenerationprocessor"
 
 import (
 	"context"

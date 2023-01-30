@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package prometheusremotewriteexporter sends metrics data to Prometheus Remote Write (PRW) endpoints.
-package prometheusremotewriteexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
+package prometheusremotewriteexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/prometheusremotewriteexporter"

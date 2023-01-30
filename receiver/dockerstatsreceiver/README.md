@@ -81,7 +81,7 @@ This feature gate is enabled by default, and eventually the old implementation w
 
 ### Migrating from ScraperV1 to ScraperV2
 
-There are some breaking changes from ScraperV1 to ScraperV2. The work done for these changes is tracked in [#9794](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9794).
+There are some breaking changes from ScraperV1 to ScraperV2. The work done for these changes is tracked in [#9794](https://github.com/ydessouky/enms-OTel-collector/issues/9794).
 
 | Breaking Change                     | Action                                                                  |
 |-------------------------------------|-------------------------------------------------------------------------|

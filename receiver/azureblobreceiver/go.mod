@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureblobreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/azureblobreceiver
 
 go 1.18
 
 require (
 	github.com/Azure/azure-event-hubs-go/v3 v3.4.0
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v0.3.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -95,6 +95,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent => ../../internal/sharedcomponent
 
 retract v0.65.0

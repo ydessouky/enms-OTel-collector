@@ -28,9 +28,9 @@ import (
 	"go.opentelemetry.io/collector/processor/batchprocessor"
 	"go.opentelemetry.io/collector/receiver/otlpreceiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver"
+	"github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter"
+	"github.com/ydessouky/enms-OTel-collector/exporter/prometheusexporter"
+	"github.com/ydessouky/enms-OTel-collector/receiver/jaegerreceiver"
 )
 
 func TestLoadConfig(t *testing.T) {

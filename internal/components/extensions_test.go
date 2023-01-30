@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Skip tests on Windows temporarily, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/11451
+// Skip tests on Windows temporarily, see https://github.com/ydessouky/enms-OTel-collector/issues/11451
 //go:build !windows
 // +build !windows
 
@@ -34,21 +34,21 @@ import (
 	"go.opentelemetry.io/collector/extension/extensiontest"
 	"go.opentelemetry.io/collector/extension/zpagesextension"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/asapauthextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/basicauthextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/fluentbitextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/httpforwarder"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecstaskobserver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/hostobserver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/dbstorage"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/filestorage"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/extension/asapauthextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/basicauthextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/bearertokenauthextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/fluentbitextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/headerssetterextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/healthcheckextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/httpforwarder"
+	"github.com/ydessouky/enms-OTel-collector/extension/oauth2clientauthextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer/ecstaskobserver"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer/hostobserver"
+	"github.com/ydessouky/enms-OTel-collector/extension/pprofextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/sigv4authextension"
+	"github.com/ydessouky/enms-OTel-collector/extension/storage/dbstorage"
+	"github.com/ydessouky/enms-OTel-collector/extension/storage/filestorage"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
 )
 
 func TestDefaultExtensions(t *testing.T) {

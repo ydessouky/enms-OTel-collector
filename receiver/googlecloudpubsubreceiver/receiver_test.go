@@ -31,7 +31,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver/testdata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/googlecloudpubsubreceiver/testdata"
 )
 
 func TestStartReceiverNoSubscription(t *testing.T) {

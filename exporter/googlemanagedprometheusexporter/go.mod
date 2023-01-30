@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlemanagedprometheusexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/googlemanagedprometheusexporter
 
 go 1.18
 

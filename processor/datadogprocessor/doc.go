@@ -25,4 +25,4 @@
 //	processor:
 //	  datadog:
 //	    metrics_exporter: otlp
-package datadogprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/datadogprocessor"
+package datadogprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/datadogprocessor"

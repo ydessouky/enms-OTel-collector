@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dockerstatsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dockerstatsreceiver"
+package dockerstatsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/dockerstatsreceiver"
 
 import (
 	"context"
@@ -24,7 +24,7 @@ import (
 	rcvr "go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dockerstatsreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/dockerstatsreceiver/internal/metadata"
 )
 
 const (
@@ -38,7 +38,7 @@ func init() {
 		useScraperV2ID,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("When enabled, the receiver will use the function ScrapeV2 to collect metrics. This allows each metric to be turned off/on via config. The new metrics are slightly different to the legacy implementation."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9794"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/9794"),
 	)
 }
 

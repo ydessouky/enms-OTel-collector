@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package datasenders // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datasenders"
+package datasenders // import "github.com/ydessouky/enms-OTel-collector/testbed/datasenders"
 
 import (
 	"context"
@@ -24,8 +24,8 @@ import (
 	"go.opentelemetry.io/collector/exporter/exportertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/exporter/jaegerexporter"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 // jaegerGRPCDataSender implements TraceDataSender for Jaeger thrift_http exporter.

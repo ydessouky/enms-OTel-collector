@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package comparetest // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
+package comparetest // import "github.com/ydessouky/enms-OTel-collector/internal/comparetest"
 
 import (
 	"fmt"

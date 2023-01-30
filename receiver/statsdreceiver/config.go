@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package statsdreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver"
+package statsdreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/statsdreceiver"
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/receiver/statsdreceiver/protocol"
 )
 
 // Config defines configuration for StatsD receiver.

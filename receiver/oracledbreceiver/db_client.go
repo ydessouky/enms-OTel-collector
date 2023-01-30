@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package oracledbreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/oracledbreceiver"
+package oracledbreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/oracledbreceiver"
 
 import (
 	"context"
@@ -26,7 +26,7 @@ import (
 	"go.uber.org/zap"
 )
 
-// This will be removed and imported from pkg/sqlquery once https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/14321 is merged.
+// This will be removed and imported from pkg/sqlquery once https://github.com/ydessouky/enms-OTel-collector/pull/14321 is merged.
 type dbClient interface {
 	metricRows(ctx context.Context) ([]metricRow, error)
 }

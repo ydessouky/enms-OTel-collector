@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metrics // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metrics"
+package metrics // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metrics"
 
 import (
 	"context"
@@ -24,7 +24,7 @@ import (
 	"github.com/DataDog/datadog-api-client-go/v2/api/datadogV2"
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metrics/sketches"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metrics/sketches"
 )
 
 var _ translator.Consumer = (*Consumer)(nil)

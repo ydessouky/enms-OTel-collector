@@ -35,7 +35,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/testutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/testutil"
 )
 
 var (

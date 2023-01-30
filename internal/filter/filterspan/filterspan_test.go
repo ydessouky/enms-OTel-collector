@@ -24,11 +24,11 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/testdata"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlspan"
 )
 
 func createConfig(matchType filterset.MatchType) *filterset.Config {

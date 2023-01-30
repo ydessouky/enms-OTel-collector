@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr
+module github.com/ydessouky/enms-OTel-collector/pkg/batchperresourceattr
 
 go 1.18
 

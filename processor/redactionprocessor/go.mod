@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/redactionprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/redactionprocessor
 
 go 1.18
 

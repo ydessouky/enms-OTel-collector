@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker
+module github.com/ydessouky/enms-OTel-collector/internal/docker
 
 go 1.18
 

@@ -15,7 +15,7 @@
 //go:build windows
 // +build windows
 
-package perfcounters // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/perfcounters"
+package perfcounters // import "github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver/internal/perfcounters"
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ import (
 
 	"github.com/leoluk/perflib_exporter/perflib"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
 )
 
 const totalInstanceName = "_Total"

@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver/dotnet"
+	"github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver/dotnet"
 )
 
 func TestMeanMetricToPdata(t *testing.T) {

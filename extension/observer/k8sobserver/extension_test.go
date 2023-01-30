@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/extension/extensiontest"
 	framework "k8s.io/client-go/tools/cache/testing"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/internal/k8sconfig"
 )
 
 const (

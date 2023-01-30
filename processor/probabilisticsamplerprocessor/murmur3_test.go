@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/idutils"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/idutils"
 )
 
 // TestHashHasNoCollisions ensures that the hash function supports different key lengths even if in

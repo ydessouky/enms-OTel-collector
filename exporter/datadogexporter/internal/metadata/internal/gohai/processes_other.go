@@ -14,7 +14,7 @@
 //go:build !linux && !darwin
 // +build !linux,!darwin
 
-package gohai // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/internal/gohai"
+package gohai // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/internal/gohai"
 
 import "go.uber.org/zap"
 

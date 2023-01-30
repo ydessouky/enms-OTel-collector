@@ -15,7 +15,7 @@
 //go:build windows
 // +build windows
 
-package iisreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver"
+package iisreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/iisreceiver"
 
 import (
 	"context"
@@ -32,10 +32,10 @@ import (
 	"go.uber.org/zap/zapcore"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
+	"github.com/ydessouky/enms-OTel-collector/pkg/winperfcounters"
+	"github.com/ydessouky/enms-OTel-collector/receiver/iisreceiver/internal/metadata"
 )
 
 // Test Scrape tests that the scraper assigns the metrics correctly

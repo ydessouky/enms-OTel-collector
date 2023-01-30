@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package clientutil contains the Datadog API client util functions.
-package clientutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
+package clientutil // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/clientutil"

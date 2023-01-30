@@ -14,4 +14,4 @@
 // limitations under the License.
 
 // Package awsutil provides the common utils for AWS components
-package awsutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil"
+package awsutil // import "github.com/ydessouky/enms-OTel-collector/internal/aws/awsutil"

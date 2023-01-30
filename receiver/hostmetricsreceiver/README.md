@@ -171,7 +171,7 @@ receivers:
 
 ## Resource attributes
 
-Currently, the hostmetrics receiver does not set any Resource attributes on the exported metrics. However, if you want to set Resource attributes, you can provide them via environment variables via the [resourcedetection](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/resourcedetectionprocessor#environment-variable) processor. For example, you can add the following resource attributes to adhere to [Resource Semantic Conventions](https://opentelemetry.io/docs/reference/specification/resource/semantic_conventions/):
+Currently, the hostmetrics receiver does not set any Resource attributes on the exported metrics. However, if you want to set Resource attributes, you can provide them via environment variables via the [resourcedetection](https://github.com/ydessouky/enms-OTel-collector/tree/main/processor/resourcedetectionprocessor#environment-variable) processor. For example, you can add the following resource attributes to adhere to [Resource Semantic Conventions](https://opentelemetry.io/docs/reference/specification/resource/semantic_conventions/):
 
 ```
 export OTEL_RESOURCE_ATTRIBUTES="service.name=<the name of your service>,service.namespace=<the namespace of your service>,service.instance.id=<uuid of the instance>"
@@ -222,8 +222,8 @@ receivers:
 [beta]: https://github.com/open-telemetry/opentelemetry-collector#beta
 [contrib]: https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol-contrib
 [core]: https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol
-[process.memory.physical_usage]: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.63.0/receiver/hostmetricsreceiver/internal/scraper/processscraper/metadata.yaml#L61
-[process.memory.virtual_usage]: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.63.0/receiver/hostmetricsreceiver/internal/scraper/processscraper/metadata.yaml#L70
+[process.memory.physical_usage]: https://github.com/ydessouky/enms-OTel-collector/blob/v0.63.0/receiver/hostmetricsreceiver/internal/scraper/processscraper/metadata.yaml#L61
+[process.memory.virtual_usage]: https://github.com/ydessouky/enms-OTel-collector/blob/v0.63.0/receiver/hostmetricsreceiver/internal/scraper/processscraper/metadata.yaml#L70
 [process.memory.usage]: https://github.com/open-telemetry/opentelemetry-specification/blob/v1.14.0/specification/metrics/semantic_conventions/process-metrics.md?plain=1#L38
 [process.memory.virtual]: https://github.com/open-telemetry/opentelemetry-specification/blob/v1.14.0/specification/metrics/semantic_conventions/process-metrics.md?plain=1#L39
-[metricstransformprocessor_docs]: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.63.0/processor/metricstransformprocessor/README.md
+[metricstransformprocessor_docs]: https://github.com/ydessouky/enms-OTel-collector/blob/v0.63.0/processor/metricstransformprocessor/README.md

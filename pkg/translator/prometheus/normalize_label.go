@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package prometheus // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+package prometheus // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/prometheus"
 
 import (
 	"strings"
@@ -28,7 +28,7 @@ func init() {
 		dropSanitizationGate,
 		featuregate.StageAlpha,
 		featuregate.WithRegisterDescription("Controls whether to change labels starting with '_' to 'key_'."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8950"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/8950"),
 	)
 }
 

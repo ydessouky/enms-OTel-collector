@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Skip tests on Windows temporarily, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/11451
+// Skip tests on Windows temporarily, see https://github.com/ydessouky/enms-OTel-collector/issues/11451
 //go:build !windows
 // +build !windows
 
@@ -33,19 +33,19 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	tcpop "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/tcp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscloudwatchreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureeventhubreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbatlasreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/snmpreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/syslogreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/tcplogreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/udplogreceiver"
+	tcpop "github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator/input/tcp"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscloudwatchreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/azureeventhubreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/chronyreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/filelogreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/mongodbatlasreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/otlpjsonfilereceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/snmpreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/syslogreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/tcplogreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/udplogreceiver"
 )
 
 func TestDefaultReceivers(t *testing.T) {

@@ -15,4 +15,4 @@
 // Package otlpjsonfilereceiver implements a receiver that can be used by the
 // Opentelemetry collector to receive logs, traces and metrics from files
 // See https://github.com/open-telemetry/opentelemetry-specification/blob/main/experimental/serialization/json.md
-package otlpjsonfilereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver"
+package otlpjsonfilereceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/otlpjsonfilereceiver"

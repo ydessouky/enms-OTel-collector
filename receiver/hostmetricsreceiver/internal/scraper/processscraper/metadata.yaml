@@ -89,7 +89,7 @@ metrics:
     warnings:
       if_enabled: >-
         The metric is deprecated and will be removed in v0.70.0. Please use `process.memory.usage` instead. See
-        https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/hostmetricsreceiver#transition-to-process-memory-metric-names-aligned-with-opentelemetry-specification
+        https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/hostmetricsreceiver#transition-to-process-memory-metric-names-aligned-with-opentelemetry-specification
         for more details.
     unit: By
     sum:
@@ -112,7 +112,7 @@ metrics:
     warnings:
       if_enabled: >-
         The metric is deprecated and will be removed in v0.70.0. Please use `process.memory.virtual` metric instead. See 
-        https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/hostmetricsreceiver#transition-to-process-memory-metric-names-aligned-with-opentelemetry-specification
+        https://github.com/ydessouky/enms-OTel-collector/tree/main/receiver/hostmetricsreceiver#transition-to-process-memory-metric-names-aligned-with-opentelemetry-specification
         for more details.
     unit: By
     sum:

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ecsutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
+package ecsutil // import "github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil"
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/sanitize"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/sanitize"
 )
 
 // Client defines the basic HTTP client interface with GET response validation and content parsing

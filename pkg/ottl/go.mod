@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl
+module github.com/ydessouky/enms-OTel-collector/pkg/ottl
 
 go 1.18
 

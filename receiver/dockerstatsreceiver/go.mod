@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dockerstatsreceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/dockerstatsreceiver
 
 go 1.18
 
 require (
 	github.com/docker/docker v20.10.22+incompatible
 	github.com/google/go-cmp v0.5.9
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/comparetest v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/docker v0.68.0
 	github.com/stretchr/testify v1.8.1
 	github.com/testcontainers/testcontainers-go v0.15.0
 	go.opentelemetry.io/collector v0.68.0
@@ -74,9 +74,9 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker => ../../internal/docker
+replace github.com/ydessouky/enms-OTel-collector/internal/docker => ../../internal/docker
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest => ../../internal/comparetest
+replace github.com/ydessouky/enms-OTel-collector/internal/comparetest => ../../internal/comparetest
 
 // see https://github.com/distribution/distribution/issues/3590
 exclude github.com/docker/distribution v2.8.0+incompatible

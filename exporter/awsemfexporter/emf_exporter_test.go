@@ -35,8 +35,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/cwlogs"
-	internaldata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/cwlogs"
+	internaldata "github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
 )
 
 const defaultRetryCount = 1

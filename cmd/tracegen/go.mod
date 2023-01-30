@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/cmd/tracegen
+module github.com/ydessouky/enms-OTel-collector/cmd/tracegen
 
 go 1.18
 

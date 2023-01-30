@@ -14,7 +14,7 @@
 
 // Package observ contains logic pertaining to the internal observation
 // of the fluent forward receiver.
-package observ // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver/observ"
+package observ // import "github.com/ydessouky/enms-OTel-collector/receiver/fluentforwardreceiver/observ"
 
 import (
 	"go.opencensus.io/stats"

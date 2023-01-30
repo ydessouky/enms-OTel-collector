@@ -139,7 +139,7 @@ func (suite *JMXIntegrationSuite) TestJMXReceiverHappyPath() {
 		t := suite.T()
 		// Run one test per JMX receiver version we're integrating with.
 		t.Run(version, func(t *testing.T) {
-			t.Skip("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/5874")
+			t.Skip("https://github.com/ydessouky/enms-OTel-collector/issues/5874")
 
 			cassandra := cassandraContainer(t)
 			defer cassandra.Terminate(context.Background())

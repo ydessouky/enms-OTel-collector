@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package elasticsearchreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver"
+package elasticsearchreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/elasticsearchreceiver"
 
 import (
 	"context"
@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/model"
+	"github.com/ydessouky/enms-OTel-collector/receiver/elasticsearchreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/elasticsearchreceiver/internal/model"
 )
 
 var (
@@ -44,7 +44,7 @@ var (
 )
 
 const (
-	readmeURL                               = "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/elasticsearchreceiver/README.md"
+	readmeURL                               = "https://github.com/ydessouky/enms-OTel-collector/blob/main/receiver/elasticsearchreceiver/README.md"
 	emitClusterHealthDetailedShardMetricsID = "receiver.elasticsearch.emitClusterHealthDetailedShardMetrics"
 	emitAllIndexOperationMetricsID          = "receiver.elasticsearch.emitAllIndexOperationMetrics"
 )
@@ -54,13 +54,13 @@ func init() {
 		emitClusterHealthDetailedShardMetricsID,
 		featuregate.StageAlpha,
 		featuregate.WithRegisterDescription("When enabled, the elasticsearch.cluster.shards metric will be emitted with two more datapoints."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/14635"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/14635"),
 	)
 	featuregate.GetRegistry().MustRegisterID(
 		emitAllIndexOperationMetricsID,
 		featuregate.StageAlpha,
 		featuregate.WithRegisterDescription("When enabled, the elasticsearch.index.operation.* metrics will be emitted with all possible datapoints."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/14635"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/14635"),
 	)
 }
 

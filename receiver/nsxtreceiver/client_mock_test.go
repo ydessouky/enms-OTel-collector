@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package nsxtreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/nsxtreceiver"
+package nsxtreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/nsxtreceiver"
 import (
 	context "context"
 	testing "testing"
 
 	mock "github.com/stretchr/testify/mock"
 
-	model "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/nsxtreceiver/internal/model"
+	model "github.com/ydessouky/enms-OTel-collector/receiver/nsxtreceiver/internal/model"
 )
 
 const (

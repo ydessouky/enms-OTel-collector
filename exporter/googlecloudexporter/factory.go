@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package googlecloudexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlecloudexporter"
+package googlecloudexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/googlecloudexporter"
 
 import (
 	"context"
@@ -39,7 +39,7 @@ func init() {
 		pdataExporterFeatureGate,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("When enabled, the googlecloud exporter translates pdata directly to google cloud monitoring's types, rather than first translating to opencensus."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/7132"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/7132"),
 	)
 }
 

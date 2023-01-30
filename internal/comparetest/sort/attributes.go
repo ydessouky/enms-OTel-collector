@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package sort // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/sort"
+package sort // import "github.com/ydessouky/enms-OTel-collector/internal/comparetest/sort"
 
 import (
 	"strings"

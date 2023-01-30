@@ -15,4 +15,4 @@
 // Package logproto contains files copied from github.com/grafana/loki/pkg/logproto to remove unnecessary dependencies.
 // In logproto.pb.go I had to remove few types Query[Request|Response] and SampleQuery[Request|Response] and the gRPC
 // service that uses them, because they depend on another loki package stats.
-package logproto // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki/logproto"
+package logproto // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/loki/logproto"

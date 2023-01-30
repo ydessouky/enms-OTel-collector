@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/datadogprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/datadogprocessor
 
 go 1.18
 

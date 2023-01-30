@@ -24,10 +24,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/consumer/consumertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	internaldata "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver/protocol"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver/transport/client"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
+	internaldata "github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver/transport/client"
 )
 
 func Test_Server_ListenAndServe(t *testing.T) {

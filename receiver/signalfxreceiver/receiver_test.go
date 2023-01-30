@@ -44,8 +44,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/signalfxexporter"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
 )
 
 func Test_signalfxeceiver_New(t *testing.T) {

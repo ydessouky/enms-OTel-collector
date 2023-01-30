@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package stores // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/stores"
+package stores // import "github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/stores"
 
 import (
 	"context"
@@ -22,8 +22,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor/extractors"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/cadvisor"
+	"github.com/ydessouky/enms-OTel-collector/receiver/awscontainerinsightreceiver/internal/cadvisor/extractors"
 )
 
 var _ cadvisor.Decorator = &K8sDecorator{}

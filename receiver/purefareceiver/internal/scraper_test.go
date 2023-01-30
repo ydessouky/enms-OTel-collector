@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/internal"
+package internal // import "github.com/ydessouky/enms-OTel-collector/receiver/purefareceiver/internal"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/config/configauth"
 	"go.opentelemetry.io/collector/extension/extensiontest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
+	"github.com/ydessouky/enms-OTel-collector/extension/bearertokenauthextension"
+	"github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver"
 )
 
 func TestToPrometheusConfig(t *testing.T) {

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package opencensus // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+package opencensus // import "github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
 
 import (
 	occommon "github.com/census-instrumentation/opencensus-proto/gen-go/agent/common/v1"

@@ -33,7 +33,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/ydessouky/enms-OTel-collector/internal/k8sconfig"
 )
 
 const certPath = "./testdata/testcert.crt"

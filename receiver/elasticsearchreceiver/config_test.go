@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/elasticsearchreceiver/internal/metadata"
 )
 
 func TestValidateCredentials(t *testing.T) {

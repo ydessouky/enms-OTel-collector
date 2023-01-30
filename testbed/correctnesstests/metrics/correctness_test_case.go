@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package metrics // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/correctnesstests/metrics"
+package metrics // import "github.com/ydessouky/enms-OTel-collector/testbed/correctnesstests/metrics"
 
 import (
 	"log"
@@ -22,8 +22,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/otelcol"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/correctnesstests"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/testbed/correctnesstests"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 type correctnessTestCase struct {

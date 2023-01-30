@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/internal"
+package internal // import "github.com/ydessouky/enms-OTel-collector/internal/metadataproviders/internal"
 
 // GOOSToOSType maps a runtime.GOOS-like value to os.type style.
 func GOOSToOSType(goos string) string {

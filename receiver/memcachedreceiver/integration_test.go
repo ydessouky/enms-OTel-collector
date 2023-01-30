@@ -32,7 +32,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
+	"github.com/ydessouky/enms-OTel-collector/internal/comparetest"
 )
 
 func TestIntegration(t *testing.T) {

@@ -27,7 +27,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters"
+	"github.com/ydessouky/enms-OTel-collector/pkg/winperfcounters"
 )
 
 func TestGetWatchers(t *testing.T) {

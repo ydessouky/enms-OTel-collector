@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ecstaskobserver // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecstaskobserver"
+package ecstaskobserver // import "github.com/ydessouky/enms-OTel-collector/extension/observer/ecstaskobserver"
 
 import (
 	"context"
@@ -23,9 +23,9 @@ import (
 	"go.opentelemetry.io/collector/extension"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	dcommon "github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/docker"
+	"github.com/ydessouky/enms-OTel-collector/extension/observer"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/ecsutil"
+	dcommon "github.com/ydessouky/enms-OTel-collector/internal/common/docker"
 )
 
 const runningStatus = "RUNNING"

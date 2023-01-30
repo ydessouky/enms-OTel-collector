@@ -15,14 +15,14 @@
 //go:build windows
 // +build windows
 
-package activedirectorydsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver"
+package activedirectorydsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/activedirectorydsreceiver"
 
 import (
 	"fmt"
 
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters"
+	"github.com/ydessouky/enms-OTel-collector/pkg/winperfcounters"
 )
 
 const (

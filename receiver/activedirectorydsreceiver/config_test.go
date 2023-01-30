@@ -27,7 +27,7 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/activedirectorydsreceiver/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package riakreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver"
+package riakreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver"
 
 import (
 	"context"
@@ -30,7 +30,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/model"
+	"github.com/ydessouky/enms-OTel-collector/receiver/riakreceiver/internal/model"
 )
 
 const (

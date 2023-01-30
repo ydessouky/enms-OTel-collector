@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package logs // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
+package logs // import "github.com/ydessouky/enms-OTel-collector/processor/transformprocessor/internal/logs"
 
 import (
 	"context"
@@ -21,9 +21,9 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottllog"
+	"github.com/ydessouky/enms-OTel-collector/processor/transformprocessor/internal/common"
 )
 
 type Processor struct {

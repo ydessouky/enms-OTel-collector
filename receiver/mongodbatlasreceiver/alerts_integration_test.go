@@ -43,7 +43,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
 )
 
 var testPayloads = []string{

@@ -25,7 +25,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/entry"
 )
 
 func TestParseValidTimestamp(t *testing.T) {

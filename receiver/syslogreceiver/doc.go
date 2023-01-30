@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package syslogreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/syslogreceiver"
+package syslogreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/syslogreceiver"

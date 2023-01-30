@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension
+module github.com/ydessouky/enms-OTel-collector/extension/oidcauthextension
 
 go 1.18
 

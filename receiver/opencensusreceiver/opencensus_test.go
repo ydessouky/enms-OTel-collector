@@ -55,8 +55,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/pkg/translator/opencensus"
 )
 
 var ocReceiverID = component.NewIDWithName(typeStr, "receiver_test")

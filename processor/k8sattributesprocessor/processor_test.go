@@ -37,8 +37,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.8.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
+	"github.com/ydessouky/enms-OTel-collector/internal/k8sconfig"
+	"github.com/ydessouky/enms-OTel-collector/processor/k8sattributesprocessor/internal/kube"
 )
 
 func newPodIdentifier(from string, name string, value string) kube.PodIdentifier {

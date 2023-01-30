@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package docker // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/docker"
+package docker // import "github.com/ydessouky/enms-OTel-collector/internal/metadataproviders/docker"
 
 import (
 	"context"
@@ -20,7 +20,7 @@ import (
 
 	"github.com/docker/docker/client"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/internal"
+	"github.com/ydessouky/enms-OTel-collector/internal/metadataproviders/internal"
 )
 
 type Provider interface {

@@ -16,7 +16,7 @@ package helper
 import (
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/ydessouky/enms-OTel-collector/pkg/stanza/operator"
 )
 
 const helpersTestType = "helpers_test"

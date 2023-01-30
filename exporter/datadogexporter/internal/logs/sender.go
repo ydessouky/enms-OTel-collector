@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package logs // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/logs"
+package logs // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/logs"
 
 import (
 	"context"
@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
+	"github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/clientutil"
 )
 
 // Sender submits logs to Datadog intake

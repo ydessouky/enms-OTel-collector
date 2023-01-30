@@ -20,9 +20,9 @@ package tests
 import (
 	"testing"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datareceivers"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datasenders"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/testbed/datareceivers"
+	"github.com/ydessouky/enms-OTel-collector/testbed/datasenders"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 func TestLog10kDPS(t *testing.T) {

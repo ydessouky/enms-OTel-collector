@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver
+module github.com/ydessouky/enms-OTel-collector/receiver/solacereceiver
 
 go 1.18
 

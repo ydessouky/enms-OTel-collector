@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package provider contains the cluster name provider
-package provider // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/provider"
+package provider // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter/internal/metadata/provider"
 
 import (
 	"context"

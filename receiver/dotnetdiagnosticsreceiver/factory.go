@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package dotnetdiagnosticsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver"
+package dotnetdiagnosticsreceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver"
 
 import (
 	"context"
@@ -27,7 +27,7 @@ import (
 	rcvr "go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dotnetdiagnosticsreceiver/network"
+	"github.com/ydessouky/enms-OTel-collector/receiver/dotnetdiagnosticsreceiver/network"
 )
 
 const (

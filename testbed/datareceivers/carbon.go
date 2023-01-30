@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package datareceivers // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datareceivers"
+package datareceivers // import "github.com/ydessouky/enms-OTel-collector/testbed/datareceivers"
 
 import (
 	"context"
@@ -24,9 +24,9 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver/protocol"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/carbonreceiver/protocol"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 // CarbonDataReceiver implements Carbon format receiver.

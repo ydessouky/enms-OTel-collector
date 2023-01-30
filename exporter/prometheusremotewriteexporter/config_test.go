@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry"
+	"github.com/ydessouky/enms-OTel-collector/pkg/resourcetotelemetry"
 )
 
 func TestLoadConfig(t *testing.T) {

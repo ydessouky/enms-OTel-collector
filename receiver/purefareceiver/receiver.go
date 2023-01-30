@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package purefareceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver"
+package purefareceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/purefareceiver"
 
 import (
 	"context"
@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/internal"
+	"github.com/ydessouky/enms-OTel-collector/receiver/prometheusreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/purefareceiver/internal"
 )
 
 var _ receiver.Metrics = (*purefaReceiver)(nil)

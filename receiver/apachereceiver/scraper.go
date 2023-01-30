@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package apachereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/apachereceiver"
+package apachereceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/apachereceiver"
 
 import (
 	"context"
@@ -32,11 +32,11 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/apachereceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/apachereceiver/internal/metadata"
 )
 
 const (
-	readmeURL                         = "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/apachereceiver/README.md"
+	readmeURL                         = "https://github.com/ydessouky/enms-OTel-collector/blob/main/receiver/apachereceiver/README.md"
 	EmitServerNameAsResourceAttribute = "receiver.apache.emitServerNameAsResourceAttribute"
 	EmitPortAsResourceAttribute       = "receiver.apache.emitPortAsResourceAttribute"
 )
@@ -46,13 +46,13 @@ func init() {
 		EmitServerNameAsResourceAttribute,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("When enabled, the name of the server will be sent as an apache.server.name resource attribute instead of a metric-level server_name attribute."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/14791"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/14791"),
 	)
 	featuregate.GetRegistry().MustRegisterID(
 		EmitPortAsResourceAttribute,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("When enabled, the port of the server will be sent as an apache.server.port resource attribute."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/14791"),
+		featuregate.WithRegisterReferenceURL("https://github.com/ydessouky/enms-OTel-collector/issues/14791"),
 	)
 }
 

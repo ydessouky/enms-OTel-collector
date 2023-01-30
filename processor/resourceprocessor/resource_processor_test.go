@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/attraction"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/testdata"
 )
 
 var (

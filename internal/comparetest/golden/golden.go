@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package golden // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+package golden // import "github.com/ydessouky/enms-OTel-collector/internal/comparetest/golden"
 
 import (
 	"encoding/json"

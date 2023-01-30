@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package kafkareceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver"
+package kafkareceiver // import "github.com/ydessouky/enms-OTel-collector/receiver/kafkareceiver"
 
 import (
 	"context"
@@ -27,8 +27,6 @@ import (
 	"go.opentelemetry.io/collector/obsreport"
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
-
-	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
 )
 
 const (
@@ -101,9 +99,7 @@ func newTracesReceiver(config Config, set receiver.CreateSettings, unmarshalers 
 		}
 		c.Version = version
 	}
-	if err := kafkaexporter.ConfigureAuthentication(config.Authentication, c); err != nil {
-		return nil, err
-	}
+
 	client, err := sarama.NewConsumerGroup(config.Brokers, config.GroupID, c)
 	if err != nil {
 		return nil, err
@@ -190,9 +186,7 @@ func newMetricsReceiver(config Config, set receiver.CreateSettings, unmarshalers
 		}
 		c.Version = version
 	}
-	if err := kafkaexporter.ConfigureAuthentication(config.Authentication, c); err != nil {
-		return nil, err
-	}
+
 	client, err := sarama.NewConsumerGroup(config.Brokers, config.GroupID, c)
 	if err != nil {
 		return nil, err
@@ -276,9 +270,7 @@ func newLogsReceiver(config Config, set receiver.CreateSettings, unmarshalers ma
 		}
 		c.Version = version
 	}
-	if err := kafkaexporter.ConfigureAuthentication(config.Authentication, c); err != nil {
-		return nil, err
-	}
+	
 	client, err := sarama.NewConsumerGroup(config.Brokers, config.GroupID, c)
 	if err != nil {
 		return nil, err

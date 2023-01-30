@@ -33,7 +33,7 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/tracegen/internal/tracegen"
+	"github.com/ydessouky/enms-OTel-collector/cmd/tracegen/internal/tracegen"
 )
 
 func main() {

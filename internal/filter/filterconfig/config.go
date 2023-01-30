@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package filterconfig // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
+package filterconfig // import "github.com/ydessouky/enms-OTel-collector/internal/filter/filterconfig"
 
 import (
 	"errors"
@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/filterset"
 )
 
 // MatchConfig has two optional MatchProperties one to define what is processed

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package spanmetricsprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanmetricsprocessor"
+package spanmetricsprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/spanmetricsprocessor"
 
 import (
 	"time"

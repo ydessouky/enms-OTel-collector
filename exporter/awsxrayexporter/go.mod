@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter
+module github.com/ydessouky/enms-OTel-collector/exporter/awsxrayexporter
 
 go 1.18
 
 require (
 	github.com/aws/aws-sdk-go v1.44.163
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/aws/awsutil v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/aws/xray v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -49,10 +49,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray => ./../../internal/aws/xray
+replace github.com/ydessouky/enms-OTel-collector/internal/aws/xray => ./../../internal/aws/xray
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil => ./../../internal/aws/awsutil
+replace github.com/ydessouky/enms-OTel-collector/internal/aws/awsutil => ./../../internal/aws/awsutil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/ydessouky/enms-OTel-collector/internal/coreinternal => ../../internal/coreinternal
 
 retract v0.65.0

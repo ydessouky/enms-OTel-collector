@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/k8sobserver
+module github.com/ydessouky/enms-OTel-collector/extension/observer/k8sobserver
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.68.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.68.0
+	github.com/ydessouky/enms-OTel-collector/extension/observer v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/k8sconfig v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
@@ -75,8 +75,8 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer => ../
+replace github.com/ydessouky/enms-OTel-collector/extension/observer => ../
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig => ../../../internal/k8sconfig
+replace github.com/ydessouky/enms-OTel-collector/internal/k8sconfig => ../../../internal/k8sconfig
 
 retract v0.65.0

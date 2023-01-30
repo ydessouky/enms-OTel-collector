@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor
+module github.com/ydessouky/enms-OTel-collector/processor/k8sattributesprocessor
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.68.0
+	github.com/ydessouky/enms-OTel-collector/internal/k8sconfig v0.68.0
 	github.com/stretchr/testify v1.8.1
 	go.opencensus.io v0.24.0
 	go.opentelemetry.io/collector v0.68.0
@@ -79,6 +79,6 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig => ./../../internal/k8sconfig
+replace github.com/ydessouky/enms-OTel-collector/internal/k8sconfig => ./../../internal/k8sconfig
 
 retract v0.65.0

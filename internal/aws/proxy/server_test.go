@@ -33,7 +33,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
 )
 
 const (

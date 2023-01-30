@@ -12,21 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package common // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/internal/common"
+package common // import "github.com/ydessouky/enms-OTel-collector/processor/filterprocessor/internal/common"
 
 import (
 	"context"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspanevent"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
+	"github.com/ydessouky/enms-OTel-collector/internal/filter/expr"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottldatapoint"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottllog"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlmetric"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlspan"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/contexts/ottlspanevent"
+	"github.com/ydessouky/enms-OTel-collector/pkg/ottl/ottlfuncs"
 )
 
 func ParseSpan(conditions []string, set component.TelemetrySettings) (expr.BoolExpr[ottlspan.TransformContext], error) {

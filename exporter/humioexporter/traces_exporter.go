@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package humioexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/humioexporter"
+package humioexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/humioexporter"
 
 import (
 	"context"
@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
 )
 
 // HumioLink represents a relation between two spans

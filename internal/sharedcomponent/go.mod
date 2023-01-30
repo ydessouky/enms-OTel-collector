@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent
+module github.com/ydessouky/enms-OTel-collector/internal/sharedcomponent
 
 go 1.18
 

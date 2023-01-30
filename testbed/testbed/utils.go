@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package testbed // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+package testbed // import "github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 
 import (
 	"net"
@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/ydessouky/enms-OTel-collector/internal/common/testutil"
 )
 
 func GetAvailablePort(t *testing.T) int {

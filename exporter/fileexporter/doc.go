@@ -13,4 +13,4 @@
 // limitations under the License.
 
 // Package fileexporter exports data to files.
-package fileexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/fileexporter"
+package fileexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/fileexporter"

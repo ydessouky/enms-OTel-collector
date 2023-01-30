@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package datasenders // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datasenders"
+package datasenders // import "github.com/ydessouky/enms-OTel-collector/testbed/datasenders"
 
 import (
 	"bytes"
@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/ydessouky/enms-OTel-collector/internal/coreinternal/traceutil"
+	"github.com/ydessouky/enms-OTel-collector/testbed/testbed"
 )
 
 type TCPUDPWriter struct {

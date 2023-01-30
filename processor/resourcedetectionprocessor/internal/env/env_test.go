@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor/internal"
 )
 
 func TestNewDetector(t *testing.T) {

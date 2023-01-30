@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package servicegraphprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/servicegraphprocessor"
+package servicegraphprocessor // import "github.com/ydessouky/enms-OTel-collector/processor/servicegraphprocessor"
 
 import (
 	"context"
@@ -34,7 +34,7 @@ import (
 	semconv "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/servicegraphprocessor/internal/store"
+	"github.com/ydessouky/enms-OTel-collector/processor/servicegraphprocessor/internal/store"
 )
 
 const (

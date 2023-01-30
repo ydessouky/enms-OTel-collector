@@ -26,7 +26,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
 	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkametricsreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/kafkametricsreceiver/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

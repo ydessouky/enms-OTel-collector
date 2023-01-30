@@ -125,7 +125,7 @@ checklinks:
 .PHONY: fmt
 fmt:
 	gofmt  -w -s ./
-	goimports -w  -local github.com/open-telemetry/opentelemetry-collector-contrib ./
+	goimports -w  -local github.com/ydessouky/enms-OTel-collector ./
 
 .PHONY: lint
 lint: checklicense misspell
@@ -147,7 +147,7 @@ misspell-correction:
 
 .PHONY: impi
 impi:
-	@$(IMPI) --local github.com/open-telemetry/opentelemetry-collector-contrib --scheme stdThirdPartyLocal ./...
+	@$(IMPI) --local github.com/ydessouky/enms-OTel-collector --scheme stdThirdPartyLocal ./...
 
 .PHONY: moddownload
 moddownload:

@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package awsproxy // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy"
+package awsproxy // import "github.com/ydessouky/enms-OTel-collector/extension/awsproxy"
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
+	"github.com/ydessouky/enms-OTel-collector/internal/aws/proxy"
 )
 
 // Config defines the configuration for an AWS X-Ray proxy.

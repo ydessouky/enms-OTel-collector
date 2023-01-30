@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/oracledbreceiver/internal/metadata"
+	"github.com/ydessouky/enms-OTel-collector/receiver/oracledbreceiver/internal/metadata"
 )
 
 func TestScraper_ErrorOnStart(t *testing.T) {

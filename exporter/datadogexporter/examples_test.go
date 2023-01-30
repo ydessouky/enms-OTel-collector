@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package datadogexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
+package datadogexporter // import "github.com/ydessouky/enms-OTel-collector/exporter/datadogexporter"
 
 import (
 	"os"
@@ -30,10 +30,10 @@ import (
 	"go.opentelemetry.io/collector/receiver/otlpreceiver"
 	"gopkg.in/yaml.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
+	"github.com/ydessouky/enms-OTel-collector/processor/k8sattributesprocessor"
+	"github.com/ydessouky/enms-OTel-collector/processor/resourcedetectionprocessor"
+	"github.com/ydessouky/enms-OTel-collector/receiver/filelogreceiver"
+	"github.com/ydessouky/enms-OTel-collector/receiver/hostmetricsreceiver"
 )
 
 // TestExamples ensures that the configuration in the YAML files can be loaded by the collector. It checks:
