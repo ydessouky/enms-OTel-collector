@@ -5,8 +5,8 @@ go 1.18
 require (
 	github.com/actgardner/gogen-avro/v10 v10.2.1
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
-	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	github.com/stretchr/testify v1.8.1
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	go.opentelemetry.io/collector/pdata v1.0.0-rc2
 	go.opentelemetry.io/collector/semconv v0.68.0
 )
