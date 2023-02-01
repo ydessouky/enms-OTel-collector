@@ -10,7 +10,7 @@ require (
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/stretchr/testify v1.8.1
 	github.com/xdg-go/scram v1.1.2
-	github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger v0.68.0
+	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter/jaeger v0.0.0-20230201091336-b8f8e11b258d
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
 	go.opentelemetry.io/collector/consumer v0.68.0
