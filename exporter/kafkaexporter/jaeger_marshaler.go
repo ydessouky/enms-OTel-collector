@@ -25,7 +25,6 @@ import (
 
 	"github.com/gogo/protobuf/jsonpb"
 	jaegerproto "github.com/jaegertracing/jaeger/model"
-	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter/jaeger"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 )
 
@@ -37,7 +36,7 @@ var _ TracesMarshaler = (*jaegerMarshaler)(nil)
 
 func (j jaegerMarshaler) Marshal(traces ptrace.Traces, topic string) ([]*kafka.Message, error) {
 
-	value, err := jaeger.ProtoFromTracesPopulation(traces)
+	value, err := ProtoFromTracesPopulation(traces)
 	if err != nil {
 		return nil, err
 	}

@@ -4,23 +4,24 @@ go 1.18
 
 require (
 	github.com/Shopify/sarama v1.37.2
+	github.com/actgardner/gogen-avro/v10 v10.2.1
 	github.com/aws/aws-sdk-go v1.44.163
 	github.com/confluentinc/confluent-kafka-go v1.9.2
 	github.com/gogo/protobuf v1.3.2
 	github.com/jaegertracing/jaeger v1.39.1-0.20221110195127-14c11365a856
 	github.com/stretchr/testify v1.8.1
 	github.com/xdg-go/scram v1.1.2
-	github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter/jaeger v0.0.0-20230201091336-b8f8e11b258d
+	github.com/ydessouky/enms-OTel-collector/internal/coreinternal v0.68.0
 	go.opentelemetry.io/collector v0.68.0
 	go.opentelemetry.io/collector/component v0.68.0
 	go.opentelemetry.io/collector/consumer v0.68.0
 	go.opentelemetry.io/collector/pdata v1.0.0-rc2
+	go.opentelemetry.io/collector/semconv v0.68.0
 	go.uber.org/multierr v1.9.0
 	go.uber.org/zap v1.24.0
 )
 
 require (
-	github.com/actgardner/gogen-avro/v10 v10.2.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/eapache/go-resiliency v1.3.0 // indirect
