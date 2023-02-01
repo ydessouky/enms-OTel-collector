@@ -25,7 +25,7 @@ import (
 
 	"github.com/gogo/protobuf/jsonpb"
 	jaegerproto "github.com/jaegertracing/jaeger/model"
-	"github.com/ydessouky/enms-OTel-collector/pkg/translator/jaeger"
+	"github.com/ydessouky/enms-OTel-collector/exporter/kafkaexporter/jaeger"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 )
 
